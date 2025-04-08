@@ -1,134 +1,49 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { Header } from "./Components/Header";
 import { ProductsCard } from "./Components/productsCard";
+import { NavBar } from "./Components/NavBar";
+import { Route, Routes } from "react-router-dom";
+import { Main } from "./Main";
+import { FavoritePage } from "./FavoritePage";
 
-const prodacts = [
-  {
-    id: 1,
-    brand: "samsung",
-    name: "samsung S25",
-    price: 300,
-    category: "phone",
-    rating: 4,
-    img: "https://imgproxy.onliner.by/J-I_JaxOCFhNxvSzK3-cDhPApqa6VesUkw2kOM7BgmA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvN2NiNTY1NzA1/NzlhZTczMjFjZjJh/YTdmMTIxNjlhOTMu/anBn",
-  },
-  {
-    id: 2,
-    brand: "Xiaomi",
-    name: "Gaming Monitor G27i",
-    price: 400,
-    category: "monitor",
-    rating: 5,
-    img: "https://imgproxy.onliner.by/a7O1EDaEHAva_ZCyc8hqdoaF9fdOFk6XFHOGZm9y_rU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMjBkM2Q2MGUy/N2MwYWJlZWQzOGYy/OWZiYzZmYTkzN2Uu/anBn",
-  },
-  {
-    id: 3,
-    brand: "Lenovo",
-    name: "IdeaPad Slim 3",
-    price: 400,
-    category: "laptop",
-    rating: 5,
-    img: "https://imgproxy.onliner.by/paAPlEXfNVZ2Bz7Bc137zVeOFXHxgFzRgUWBXngizWA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvZDMzN2Y2ODY3/MjdjMzM3ZjZhZWEz/ZDMyZmE5ZDQ4Njku/anBn",
-  },
-  {
-    id: 4,
-    brand: "apple",
-    name: "Iphone 16",
-    price: 400,
-    category: "phone",
-    rating: 5,
-    img: "https://imgproxy.onliner.by/J0yb5vVWNyvL2gXu4LKXh36lUpk8sGHBwuuaxazbOR8/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNjVhYTJkNGYx/ZDBjNjRiNjQ1OGQ2/ZGUyOWFmM2IwMDku/anBn",
-  },
-  {
-    id: 5,
-    brand: "samsung",
-    name: "samsung S24",
-    price: 250,
-    category: "phone",
-    rating: 3,
-    img: "https://imgproxy.onliner.by/cYOYwagP3kZNVWgI8oX1h2qcEgqBgVGQgajWbwFeIKs/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYjQ1NmJkN2Ex/ZGI3MTAxNDc5NWFl/MGMzOTQ3NjY4ZGYu/anBn",
-  },
-  {
-    id: 6,
-    brand: "Xiaomi",
-    name: "Redmi Note 14 Pro+",
-    price: 300,
-    category: "phone",
-    rating: 3,
-    img: "https://imgproxy.onliner.by/JRmowke09RylA11Wc2PLtHdjuflFBTm3Msv1CEV1pFU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNTkxMDMyYTEw/OTE2ZjdjYTY3NzY5/Y2U2YzhmM2FhYjMu/anBn",
-  },
-  {
-    id: 7,
-    brand: "Xiaomi",
-    name: "Xiaomi 15 Ultra",
-    price: 400,
-    category: "phone",
-    rating: 5,
-    img: "https://imgproxy.onliner.by/gqfmp5ZyAwrACWIjdeeDE5S3sPgUDNzNPDdrdf5KU2Q/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYzJhZDQ3YmIy/OTljZDhiOTIxZmMx/YWZmMjFjOGEwYTEu/anBn",
-  },
-  {
-    id: 8,
-    brand: "ASUS",
-    name: "Vivobook 16X",
-    price: 400,
-    category: "laptop",
-    rating: 5,
-    img: "https://imgproxy.onliner.by/a8Qm7NhRtEt0oO4QsyOIuOGeiMXriynrxV3noeDWDhA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmE2OGE2ODc5/Y2Y2MzAzMjA0MTYw/ODJmMjliNjE5ZTYu/anBn",
-  },
-  {
-    id: 9,
-    brand: "ASUS",
-    name: "TUF Gaming A15",
-    price: 400,
-    category: "laptop",
-    rating: 5,
-    img: "https://imgproxy.onliner.by/TL0isupe2A1D7zjDgmbMzGAltab27faaj2w_fvTq_YA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmMwMzYyMTIx/M2VhNmQ1ZDNkNzYx/NTFlZTQ5YTQ1OTku/anBlZw",
-  },
-  {
-    id: 10,
-    brand: "apple",
-    name: "Macbook Air 13",
-    price: 400,
-    category: "laptop",
-    rating: 5,
-    img: "https://imgproxy.onliner.by/vWmTOLSmgT_th1WW7SauBfMDX27FStMx3fWecwC8MjM/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvOWEwOGU1ZjU0/MDBlNTA4ZmI5NzVi/ZjY5NzY2OWMyYjUu/anBlZw",
-  },
-  {
-    id: 11,
-    brand: "Xiaomi",
-    name: "2K Monitor A27Qi",
-    price: 400,
-    category: "monitor",
-    rating: 5,
-    img: "https://imgproxy.onliner.by/sWD7MBCXIqQfS3AOv0-5ADWwvZ4lHzUDsX9HpKxLlgk/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNDIyNGZmNWZk/ZWIwMDNhMDI3YTg1/ZDJhMTdmZTJkZWMu/anBn",
-  },
-  {
-    id: 12,
-    brand: "LG",
-    name: "UltraWide 34WP65C-B",
-    price: 400,
-    category: "monitor",
-    rating: 5,
-    img: "https://imgproxy.onliner.by/CP5L1dQIKPJfhFgIxcDm8N_PlA58GB7b-Q6Yha2_Bqo/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMzA5NTZmNzhk/ZDJmNjNiYjk0YTdh/ODRjODVmODRjZDgu/anBlZw",
-  },
-];
 function App() {
+  // const [users, setUsers] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [favoriteProducts, setFavoriteProducts] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [inputName, setInputName] = useState("");
-  const [category, setCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [openNavbar, setOpenNavbar] = useState(false);
 
-  /* поиск по названию */
-  /* const filteredProducts = inputName
-    ? prodacts.filter((el) => el.name.includes(inputName))
-    : prodacts; */
+  useEffect(() => {
+    setLoading(true);
+    // этот код выполнится один раз при создании компонета.
+    /* запрос к серверу _like -- нестрогое равенство
+    ?q=....&-- квери-запросы*/
+    /* поиск по категориям в меню и через поиск через  Back-end*/
+    fetch(
+      `http://localhost:5000/products?q=${inputName}&category_like=${selectedCategory}`
+    )
+      .then((Response) => Response.json())
+      .then((result) => {
+        setLoading(false);
+        setProducts(result);
+      })
+      .catch((error) => console.log(error));
+  }, [inputName, selectedCategory]);
 
-  /* поиск по категориям в меню и через поиск*/
-  const filteredProducts = prodacts.filter(
-    (el) =>
-      el.category.includes(category) &&
-      el.name.toLowerCase().includes(inputName.toLowerCase())
-  );
+  const loadFavorite = () => {
+    fetch(`http://localhost:5000/favorites`)
+      .then((Response) => Response.json())
+      .then((result) => {
+        setFavoriteProducts(result);
+      })
+      .catch((error) => console.log(error));
+  };
+  useEffect(() => {
+    loadFavorite();
+  }, []);
 
   const handInput = (text) => {
     setInputName(text);
@@ -138,51 +53,92 @@ function App() {
     setOpenNavbar(!openNavbar);
   };
   const handleChangeCategory = (changedCategory) => {
-    if (changedCategory === category) {
-      setCategory("");
-      return
-    } 
-      setCategory(changedCategory);
+    if (changedCategory === selectedCategory) {
+      setSelectedCategory("");
+      return;
+    }
+    setSelectedCategory(changedCategory);
+  };
+
+  const addToFavotes = (product) => {
+    /* возвращает true, усли хотя бы на одном из элементов выполняется условие */
+    if (favoriteProducts.some((el) => el.id === product.id)) {
+      fetch(`http://localhost:5000/favorites/${product.id}`, {
+        method: "DELETE", // или 'PUT'
+      }).then((result) => loadFavorite());
+    } else {
+      fetch(`http://localhost:5000/favorites`, {
+        method: "POST", // или 'PUT'
+        body: JSON.stringify(product), // данные могут быть 'строкой' или {объектом}!
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }).then((result) => loadFavorite());/* вызывает функцию как только обработается запрос на сервере */
+    }
   };
 
   return (
     <div>
-      <Header handInput={handInput} handleOpenMenu={handleOpenMenu} />
-      {openNavbar && (
-        <div className="navBar">
-          <div
-            onClick={() => handleChangeCategory("phone")}
-            className={category === "phone" && "active"}
-          >
-            Телефоны
-          </div>
-          <div
-            onClick={() => handleChangeCategory("laptop")}
-            className={category === "laptop" && "active"}
-          >
-            Ноутбуки
-          </div>
-          <div
-            onClick={() => handleChangeCategory("monitor")}
-            className={category === "monitor" && "active"}
-          >
-            Мониторы
-          </div>
-        </div>
-      )}
-      <div className="cardBlock">
-        {filteredProducts.map((el) => (
-          <ProductsCard
-            key={el.id}
-            name={el.name}
-            img={el.img}
-            rating={el.rating}
-            price={el.price}
-            brand={el.brand}
-          />
-        ))}
-      </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Main
+              openNavbar={openNavbar}
+              handleOpenMenu={handleOpenMenu}
+              handInput={handInput}
+              handleChangeCategory={handleChangeCategory}
+              selectedCategory={selectedCategory}
+              products={products}
+              addToFavotes={addToFavotes}
+              favoritesIds={favoriteProducts.map((i) => i.id)}
+              loading={loading}
+            />
+          }
+        />
+
+        <Route
+          path="/favorite"
+          element={<FavoritePage favoriteProducts={favoriteProducts} />}
+        />
+      </Routes>
     </div>
   );
 }
 export default App;
+
+/* поиск по названию */
+/* const filteredProducts = inputName
+    ? prodacts.filter((el) => el.name.includes(inputName))
+    : prodacts; */
+
+/* поиск по категориям в меню и через поиск*/
+/*   const filteredProducts = products.filter(
+    (el) =>
+      el.category.includes(selectedCategory) &&
+      el.name.toLowerCase().includes(inputName.toLowerCase())
+  ); */
+
+/* useEffect(() => {
+    // этот код выполнится один раз при создании компонета.
+  }, []); //массив зависимостей. В массиве зависимостей указывается объект за которым следит useEffect и при изменении объекта выполнется код внутри useEffect. useEffect с пустой зависимостью выполняется один раз.
+
+  useEffect(() => {
+    return () => {
+      console.log("код вызывается при удалении компонента");
+    };
+  }, []); */
+
+/* создаем массив с избранными товарами 
+  const favoriteProducts = products.filter((product) =>
+    favoritesIds.includes(product.id)
+  ); */
+
+/*добавление товаров во взладку с избранным 
+  const addToFavotes = (id) => {
+    if (favoritesIds.includes(id)) {
+      setFavoritesIds(favoritesIds.filter((i) => i !== id));
+      return;
+    }
+    setFavoritesIds([...favoritesIds, id]);
+  }; */

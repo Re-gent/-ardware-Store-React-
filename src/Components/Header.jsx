@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { FavoriteIcon } from "./FavoriteIcon";
+
 export const Header = ({ handInput, handleOpenMenu }) => {
   return (
     <div className="header">
@@ -24,7 +27,11 @@ export const Header = ({ handInput, handleOpenMenu }) => {
         </svg>
       </div>
       <input onChange={(e) => handInput(e.target.value)} />
-      <div>header</div>
+      <Link to="/favorite">
+        <div className="favoriteMenu">
+          <FavoriteIcon active={false} />
+        </div>
+      </Link>
     </div>
   );
 };

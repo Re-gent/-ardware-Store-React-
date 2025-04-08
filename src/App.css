@@ -18,9 +18,9 @@
   width: 250px;
   height: 350px;
 }
-.prodactCard div {
+/* .prodactCard div {
   margin-top: 10px;
-}
+} */
 .CardPicture{
   height: 200px;
 }
@@ -42,4 +42,14 @@
 }
 .navBar div:hover, .active{
   background-color: rgb(57, 57, 182);
+}
+.cardContent{
+  display: flex;
+  justify-content: space-between;
+}
+.iconFavorite{
+  margin-right: 20px;
+}
+.favoriteMenu{
+  margin-right: 45px;
 }
