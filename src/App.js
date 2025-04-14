@@ -6,15 +6,18 @@ import { NavBar } from "./Components/NavBar";
 import { Route, Routes } from "react-router-dom";
 import { Main } from "./Main";
 import { FavoritePage } from "./FavoritePage";
+import { fetchFavorites } from "./FavoritesSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 function App() {
   // const [users, setUsers] = useState([]);
   const [products, setProducts] = useState([]);
-  const [favoriteProducts, setFavoriteProducts] = useState([]);
+  const favorites = useSelector((state) => state.favorites.favorites); 
   const [loading, setLoading] = useState(false);
   const [inputName, setInputName] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [openNavbar, setOpenNavbar] = useState(false);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     setLoading(true);
@@ -33,16 +36,11 @@ function App() {
       .catch((error) => console.log(error));
   }, [inputName, selectedCategory]);
 
-  const loadFavorite = () => {
-    fetch(`http://localhost:5000/favorites`)
-      .then((Response) => Response.json())
-      .then((result) => {
-        setFavoriteProducts(result);
-      })
-      .catch((error) => console.log(error));
-  };
+      
+  
   useEffect(() => {
-    loadFavorite();
+    //loadFavorite();
+    dispatch(fetchFavorites())
   }, []);
 
   const handInput = (text) => {
@@ -62,10 +60,10 @@ function App() {
 
   const addToFavotes = (product) => {
     /* возвращает true, усли хотя бы на одном из элементов выполняется условие */
-    if (favoriteProducts.some((el) => el.id === product.id)) {
+    if (favorites.some((el) => el.id === product.id)) {
       fetch(`http://localhost:5000/favorites/${product.id}`, {
         method: "DELETE", // или 'PUT'
-      }).then((result) => loadFavorite());
+      }).then((result) => dispatch(fetchFavorites()));
     } else {
       fetch(`http://localhost:5000/favorites`, {
         method: "POST", // или 'PUT'
@@ -73,7 +71,9 @@ function App() {
         headers: {
           "Content-Type": "application/json",
         },
-      }).then((result) => loadFavorite());/* вызывает функцию как только обработается запрос на сервере */
+      }).then((result) =>
+        dispatch(fetchFavorites())
+      ); /* вызывает функцию как только обработается запрос на сервере */
     }
   };
 
@@ -91,7 +91,7 @@ function App() {
               selectedCategory={selectedCategory}
               products={products}
               addToFavotes={addToFavotes}
-              favoritesIds={favoriteProducts.map((i) => i.id)}
+              favoritesIds={favorites.map((i) => i.id)}
               loading={loading}
             />
           }
@@ -99,7 +99,7 @@ function App() {
 
         <Route
           path="/favorite"
-          element={<FavoritePage favoriteProducts={favoriteProducts} />}
+          element={<FavoritePage />}
         />
       </Routes>
     </div>
@@ -141,4 +141,14 @@ export default App;
       return;
     }
     setFavoritesIds([...favoritesIds, id]);
+  }; */
+
+/*  const loadFavorite = () => {
+     fetch(`http://localhost:5000/favorites`)
+      .then((Response) => Response.json())
+      .then((result) => {
+        setFavoriteProducts(result);
+      })
+      .catch((error) => console.log(error));  
+
   }; */
