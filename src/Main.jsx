@@ -16,13 +16,13 @@ export const Main = ({
   return (
     <>
       <Header handInput={handInput} handleOpenMenu={handleOpenMenu} />
-      {loading && <h1>Loading...</h1>}
       {openNavbar && (
         <NavBar
           handleChangeCategory={handleChangeCategory}
           selectedCategory={selectedCategory}
         />
       )}
+      {loading && <h1>Loading...</h1>}
       <div className="cardBlock">
         {products.map((el) => (
           <ProductsCard

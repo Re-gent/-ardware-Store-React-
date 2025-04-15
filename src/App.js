@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from "react";
 import "./App.css";
 import { Header } from "./Components/Header";
@@ -8,35 +9,27 @@ import { Main } from "./Main";
 import { FavoritePage } from "./FavoritePage";
 import { fetchFavorites } from "./FavoritesSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { fetchProducts } from "./productsSlice";
+
 
 function App() {
   // const [users, setUsers] = useState([]);
-  const [products, setProducts] = useState([]);
-  const favorites = useSelector((state) => state.favorites.favorites); 
-  const [loading, setLoading] = useState(false);
   const [inputName, setInputName] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [openNavbar, setOpenNavbar] = useState(false);
+
+  const favorites = useSelector((state) => state.favorites.favorites); 
+  const products = useSelector((state) => state.products.products); 
+  const productsloading = useSelector((state) => state.products.loading); 
+
   const dispatch = useDispatch();
 
   useEffect(() => {
-    setLoading(true);
+    //setLoading(true);
     // этот код выполнится один раз при создании компонета.
-    /* запрос к серверу _like -- нестрогое равенство
-    ?q=....&-- квери-запросы*/
-    /* поиск по категориям в меню и через поиск через  Back-end*/
-    fetch(
-      `http://localhost:5000/products?q=${inputName}&category_like=${selectedCategory}`
-    )
-      .then((Response) => Response.json())
-      .then((result) => {
-        setLoading(false);
-        setProducts(result);
-      })
-      .catch((error) => console.log(error));
+      dispatch(fetchProducts({inputName, selectedCategory}))
   }, [inputName, selectedCategory]);
 
-      
   
   useEffect(() => {
     //loadFavorite();
@@ -92,7 +85,7 @@ function App() {
               products={products}
               addToFavotes={addToFavotes}
               favoritesIds={favorites.map((i) => i.id)}
-              loading={loading}
+              loading={productsloading}
             />
           }
         />
@@ -152,3 +145,19 @@ export default App;
       .catch((error) => console.log(error));  
 
   }; */
+
+
+  /* useEffect(() => {
+    //setLoading(true);
+    // этот код выполнится один раз при создании компонета.
+     fetch(
+       `http://localhost:5000/products?q=${inputName}&category_like=${selectedCategory}`
+    )
+      .then((Response) => Response.json())
+      .then((result) => {
+        setLoading(false);
+        setProducts(result);
+      })
+      .catch((error) => console.log(error));  
+      
+  }, [inputName, selectedCategory]); */
