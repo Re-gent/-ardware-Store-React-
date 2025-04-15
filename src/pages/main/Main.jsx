@@ -5,16 +5,19 @@ import { NavBar } from "../../Components/NavBar";
 import { ProductsCard } from "../../Components/productsCard";
 import { useDispatch, useSelector } from "react-redux";
 import { addToFavorites, deleteFavorites } from "../favorite/FavoritesSlice";
+import { Sort } from "../../Components/Sort/Sort";
 
 export const Main = ({
   handInput,
   handleChangeCategory,
   selectedCategory,
+  handleChangeSort,
+  sort,
 }) => {
   const [openNavbar, setOpenNavbar] = useState(false);
 
   const favorites = useSelector((state) => state.favorites.favorites);
-  const {products,loading} = useSelector((state) => state.products);
+  const { products, loading } = useSelector((state) => state.products);
 
   const dispatch = useDispatch();
 
@@ -39,6 +42,9 @@ export const Main = ({
           selectedCategory={selectedCategory}
         />
       )}
+
+      <Sort sort={sort} handleChangeSort={handleChangeSort} />
+
       {loading && <h1>Loading...</h1>}
       <div className="cardBlock">
         {products.map((el) => (

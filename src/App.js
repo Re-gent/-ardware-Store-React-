@@ -15,14 +15,15 @@ function App() {
   // const [users, setUsers] = useState([]);
   const [inputName, setInputName] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [sort, setSort] = useState("asc");
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     //setLoading(true);
     // этот код выполнится один раз при создании компонета.
-    dispatch(fetchProducts({ inputName, selectedCategory }));
-  }, [inputName, selectedCategory]);
+    dispatch(fetchProducts({ inputName, selectedCategory, sort }));
+  }, [inputName, selectedCategory, sort]);
 
   useEffect(() => {
     //loadFavorite();
@@ -41,6 +42,13 @@ function App() {
     setSelectedCategory(changedCategory);
   };
 
+  const handleChangeSort = (order) => {
+    if (sort === order) {
+      setSort("");
+      return;
+    }
+    setSort(order);
+  };
   return (
     <div>
       <Routes>
@@ -48,6 +56,8 @@ function App() {
           path="/"
           element={
             <Main
+              sort={sort}
+              handleChangeSort={handleChangeSort}
               handInput={handInput}
               handleChangeCategory={handleChangeCategory}
               selectedCategory={selectedCategory}

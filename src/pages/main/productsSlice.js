@@ -7,10 +7,12 @@ export const fetchProducts = createAsyncThunk(
     /* запрос к серверу _like -- нестрогое равенство
 	?q=....&-- квери-запросы*/
     /* поиск по категориям в меню и через поиск через  Back-end*/
-    const { selectedCategory, inputName } = params;
+    const { selectedCategory, inputName, sort } = params;
+    
+    const sortQuery = sort ? `&_sort=price&_order=${sort}` : "";
 
     const response = await fetch(
-      `http://localhost:5000/products?q=${inputName}&category_like=${selectedCategory}`
+      `http://localhost:5000/products?q=${inputName}&category_like=${selectedCategory}${sortQuery}`
     );
     const result = await response.json();
     return result;
@@ -31,7 +33,7 @@ export const productsSlice = createSlice({
       state.loading = true;
     });
     builder.addCase(fetchProducts.fulfilled, (state, action) => {
-			state.loading = false;
+      state.loading = false;
       /* данные приходят с сервера */
       const dataFromServer = action.payload;
       state.products = dataFromServer;
