@@ -9,7 +9,7 @@ export const Main = ({
   handleChangeCategory,
   selectedCategory,
   products,
-  addToFavotes,
+  onClickFavorites,
   favoritesIds,
   loading,
 }) => {
@@ -27,7 +27,7 @@ export const Main = ({
         {products.map((el) => (
           <ProductsCard
             key={el.id}
-            addToFavotes={addToFavotes}
+            onClickFavorites={onClickFavorites}
             favoritesIds={favoritesIds}
             product={el}
           />

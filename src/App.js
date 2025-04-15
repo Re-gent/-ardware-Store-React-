@@ -7,7 +7,7 @@ import { NavBar } from "./Components/NavBar";
 import { Route, Routes } from "react-router-dom";
 import { Main } from "./Main";
 import { FavoritePage } from "./FavoritePage";
-import { fetchFavorites } from "./FavoritesSlice";
+import { addToFavorites, deleteFavorites, fetchFavorites } from "./FavoritesSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "./productsSlice";
 
@@ -51,22 +51,12 @@ function App() {
     setSelectedCategory(changedCategory);
   };
 
-  const addToFavotes = (product) => {
+  const onClickFavorites = (product) => {
     /* возвращает true, усли хотя бы на одном из элементов выполняется условие */
     if (favorites.some((el) => el.id === product.id)) {
-      fetch(`http://localhost:5000/favorites/${product.id}`, {
-        method: "DELETE", // или 'PUT'
-      }).then((result) => dispatch(fetchFavorites()));
+      dispatch(deleteFavorites(product.id))
     } else {
-      fetch(`http://localhost:5000/favorites`, {
-        method: "POST", // или 'PUT'
-        body: JSON.stringify(product), // данные могут быть 'строкой' или {объектом}!
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }).then((result) =>
-        dispatch(fetchFavorites())
-      ); /* вызывает функцию как только обработается запрос на сервере */
+      dispatch(addToFavorites(product))
     }
   };
 
@@ -83,7 +73,7 @@ function App() {
               handleChangeCategory={handleChangeCategory}
               selectedCategory={selectedCategory}
               products={products}
-              addToFavotes={addToFavotes}
+              onClickFavorites={onClickFavorites}
               favoritesIds={favorites.map((i) => i.id)}
               loading={productsloading}
             />
@@ -161,3 +151,24 @@ export default App;
       .catch((error) => console.log(error));  
       
   }, [inputName, selectedCategory]); */
+
+
+  /* const onClickFavorites = (product) => {
+    /* возвращает true, усли хотя бы на одном из элементов выполняется условие */
+   /* if (favorites.some((el) => el.id === product.id)) {
+      fetch(`http://localhost:5000/favorites/${product.id}`, {
+        method: "DELETE", // или 'PUT'
+      }).then((result) => dispatch(fetchFavorites()));
+    } else {
+      fetch(`http://localhost:5000/favorites`, {
+        method: "POST", // или 'PUT'
+        body: JSON.stringify(product), // данные могут быть 'строкой' или {объектом}!
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }).then((result) =>
+        dispatch(fetchFavorites())
+      ); 
+      // вызывает функцию как только обработается запрос на сервере 
+    }
+  } */
