@@ -13,7 +13,7 @@ export const fetchFavorites = createAsyncThunk(
 
 export const addToFavorites = createAsyncThunk(
   "products/addToFavorites",
-  async (produt, thunkAPI) => {
+  async (produt, {dispatch}) => {
     await fetch(`http://localhost:5000/favorites`, {
       method: "POST", // или 'PUT'
       body: JSON.stringify(produt), // данные могут быть 'строкой' или {объектом}!
@@ -21,18 +21,18 @@ export const addToFavorites = createAsyncThunk(
         "Content-Type": "application/json",
       },
     })
-    thunkAPI.dispatch(fetchFavorites())
+    dispatch(fetchFavorites())
   }
 );
 
 export const deleteFavorites = createAsyncThunk(
   "products/addFavorites",
-  async (id, thunkAPI) => {
+  async (id, {dispatch}) => {
     await fetch(`http://localhost:5000/favorites/${id}`, {
       method: "DELETE", // или 'PUT'
     })
 
-    thunkAPI.dispatch(fetchFavorites())
+    dispatch(fetchFavorites())
   }
 );
 

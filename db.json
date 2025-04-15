@@ -111,24 +111,6 @@
   ],
   "favorites": [
     {
-      "id": 8,
-      "brand": "ASUS",
-      "name": "Vivobook 16X",
-      "price": 400,
-      "category": "laptop",
-      "rating": 5,
-      "img": "https://imgproxy.onliner.by/a8Qm7NhRtEt0oO4QsyOIuOGeiMXriynrxV3noeDWDhA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmE2OGE2ODc5/Y2Y2MzAzMjA0MTYw/ODJmMjliNjE5ZTYu/anBn"
-    },
-    {
-      "id": 1,
-      "brand": "samsung",
-      "name": "samsung S25",
-      "price": 300,
-      "category": "phone",
-      "rating": 4,
-      "img": "https://imgproxy.onliner.by/J-I_JaxOCFhNxvSzK3-cDhPApqa6VesUkw2kOM7BgmA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvN2NiNTY1NzA1/NzlhZTczMjFjZjJh/YTdmMTIxNjlhOTMu/anBn"
-    },
-    {
       "id": 11,
       "brand": "Xiaomi",
       "name": "2K Monitor A27Qi",

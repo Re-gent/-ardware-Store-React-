@@ -5,59 +5,40 @@ import { Header } from "./Components/Header";
 import { ProductsCard } from "./Components/productsCard";
 import { NavBar } from "./Components/NavBar";
 import { Route, Routes } from "react-router-dom";
-import { Main } from "./Main";
-import { FavoritePage } from "./FavoritePage";
-import { addToFavorites, deleteFavorites, fetchFavorites } from "./FavoritesSlice";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchProducts } from "./productsSlice";
-
+import { Main } from "./pages/main/Main";
+import { FavoritePage } from "./pages/favorite/FavoritePage";
+import { fetchFavorites } from "./pages/favorite/FavoritesSlice";
+import { useDispatch } from "react-redux";
+import { fetchProducts } from "./pages/main/productsSlice";
 
 function App() {
   // const [users, setUsers] = useState([]);
   const [inputName, setInputName] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [openNavbar, setOpenNavbar] = useState(false);
-
-  const favorites = useSelector((state) => state.favorites.favorites); 
-  const products = useSelector((state) => state.products.products); 
-  const productsloading = useSelector((state) => state.products.loading); 
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     //setLoading(true);
     // этот код выполнится один раз при создании компонета.
-      dispatch(fetchProducts({inputName, selectedCategory}))
+    dispatch(fetchProducts({ inputName, selectedCategory }));
   }, [inputName, selectedCategory]);
 
-  
   useEffect(() => {
     //loadFavorite();
-    dispatch(fetchFavorites())
+    dispatch(fetchFavorites());
   }, []);
 
   const handInput = (text) => {
     setInputName(text);
   };
 
-  const handleOpenMenu = () => {
-    setOpenNavbar(!openNavbar);
-  };
   const handleChangeCategory = (changedCategory) => {
     if (changedCategory === selectedCategory) {
       setSelectedCategory("");
       return;
     }
     setSelectedCategory(changedCategory);
-  };
-
-  const onClickFavorites = (product) => {
-    /* возвращает true, усли хотя бы на одном из элементов выполняется условие */
-    if (favorites.some((el) => el.id === product.id)) {
-      dispatch(deleteFavorites(product.id))
-    } else {
-      dispatch(addToFavorites(product))
-    }
   };
 
   return (
@@ -67,23 +48,14 @@ function App() {
           path="/"
           element={
             <Main
-              openNavbar={openNavbar}
-              handleOpenMenu={handleOpenMenu}
               handInput={handInput}
               handleChangeCategory={handleChangeCategory}
               selectedCategory={selectedCategory}
-              products={products}
-              onClickFavorites={onClickFavorites}
-              favoritesIds={favorites.map((i) => i.id)}
-              loading={productsloading}
             />
           }
         />
 
-        <Route
-          path="/favorite"
-          element={<FavoritePage />}
-        />
+        <Route path="/favorite" element={<FavoritePage />} />
       </Routes>
     </div>
   );
@@ -136,8 +108,7 @@ export default App;
 
   }; */
 
-
-  /* useEffect(() => {
+/* useEffect(() => {
     //setLoading(true);
     // этот код выполнится один раз при создании компонета.
      fetch(
@@ -152,10 +123,9 @@ export default App;
       
   }, [inputName, selectedCategory]); */
 
-
-  /* const onClickFavorites = (product) => {
+/* const onClickFavorites = (product) => {
     /* возвращает true, усли хотя бы на одном из элементов выполняется условие */
-   /* if (favorites.some((el) => el.id === product.id)) {
+/* if (favorites.some((el) => el.id === product.id)) {
       fetch(`http://localhost:5000/favorites/${product.id}`, {
         method: "DELETE", // или 'PUT'
       }).then((result) => dispatch(fetchFavorites()));

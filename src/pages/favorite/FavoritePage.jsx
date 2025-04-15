@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { Link } from "react-router-dom";
-import { ProductsCard } from "./Components/productsCard";
+import { ProductsCard } from "../../Components/productsCard";
 import { useSelector } from "react-redux";
 
 export const FavoritePage = () => {
