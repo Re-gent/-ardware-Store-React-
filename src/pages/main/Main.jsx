@@ -1,13 +1,14 @@
-// @ts-nocheck
+
 import { useState } from "react";
 import { Header } from "../../Components/Header";
 import { NavBar } from "../../Components/NavBar";
 import { ProductsCard } from "../../Components/productsCard";
 import { useDispatch, useSelector } from "react-redux";
-import { addToFavorites, deleteFavorites } from "../favorite/FavoritesSlice";
 import { Sort } from "../../Components/Sort/Sort";
+import { addToCart, deleteCart } from "../cart/slices";
 
 export const Main = ({
+  onClickFavorites,
   handInput,
   handleChangeCategory,
   selectedCategory,
@@ -16,8 +17,12 @@ export const Main = ({
 }) => {
   const [openNavbar, setOpenNavbar] = useState(false);
 
+  // @ts-ignore
   const favorites = useSelector((state) => state.favorites.favorites);
+  // @ts-ignore
   const { products, loading } = useSelector((state) => state.products);
+  // @ts-ignore
+  const cart = useSelector((state) => state.cart.cart);
 
   const dispatch = useDispatch();
 
@@ -25,12 +30,16 @@ export const Main = ({
     setOpenNavbar(!openNavbar);
   };
 
-  const onClickFavorites = (product) => {
+  
+
+  const onClickCart = (product) => {
     /* возвращает true, усли хотя бы на одном из элементов выполняется условие */
-    if (favorites.some((el) => el.id === product.id)) {
-      dispatch(deleteFavorites(product.id));
+    if (cart.some((el) => el.id === product.id)) {
+      // @ts-ignore
+      dispatch(deleteCart(product.id));
     } else {
-      dispatch(addToFavorites(product));
+      // @ts-ignore
+      dispatch(addToCart(product));
     }
   };
   return (
@@ -51,7 +60,9 @@ export const Main = ({
           <ProductsCard
             key={el.id}
             onClickFavorites={onClickFavorites}
+            onClickCart={onClickCart}
             favoritesIds={favorites.map((i) => i.id)}
+            CartIds={cart.map((i) => i.id)}
             product={el}
           />
         ))}

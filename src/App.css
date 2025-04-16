@@ -3,7 +3,7 @@
   height: 70px;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
   align-items: center;
 }
@@ -18,9 +18,6 @@
   width: 250px;
   height: 350px;
 }
-/* .prodactCard div {
-  margin-top: 10px;
-} */
 .CardPicture{
   height: 200px;
 }
@@ -29,7 +26,7 @@
   flex-wrap: wrap;
 }
 .navBar{
-  box-shadow: 3px 3px 3px 3px gray;
+  box-shadow: 3px 3px 3px 3px rgb(128, 128, 128);
   width: 300px;
   height: 100%;
   position: absolute;
@@ -49,6 +46,8 @@
 }
 .iconFavorite{
   margin-right: 20px;
+  margin-bottom: 50px;
+  cursor: pointer;
 }
 .favoriteMenu{
   margin-right: 45px;

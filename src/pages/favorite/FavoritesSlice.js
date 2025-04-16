@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-
+// REDUX слайсер. Здесь собраны все запросы с сервера для избранных товаров
 export const fetchFavorites = createAsyncThunk(
   "products/fetchFavorites",
   async (params, thunkAPI) => {

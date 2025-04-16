@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-
+// REDUX слайсер. Здесь собраны все запросы с сервера для  товаров на главной странице
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async (params, thunkAPI) => {

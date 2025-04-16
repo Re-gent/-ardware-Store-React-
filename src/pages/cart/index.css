@@ -1,0 +1,50 @@
+.cartItemBlock{
+	box-shadow: 1px 1px 1px 1px gray;
+  margin: 20px;
+  padding: 20px;
+	display: flex;
+  /* height: 350px; */
+}
+.cartItemTitle{
+	margin-left: 30px;
+	width: 200px;
+}
+.cartItemPriceWrapper{
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+.cartItemQuantity{
+	margin-right: 150px;
+}
+.cartItemQuantity span{
+	margin: 0 20px;
+}
+.cartItemPrice{
+	width: 100px;
+}
+.totalPriceBlock{
+	background: rgb(223, 215, 215);
+	border-radius: 20px;
+  margin: 20px;
+	margin-top: 50px;
+  padding: 20px;
+}
+.totalPriceRow{
+	display: flex;
+}
+.totalPrice{
+	margin-left: auto;
+	margin-right: 30px;
+}
+.cartDeleteItem{
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	width: 30px;
+}
+.cartDeleteItem:hover{
+	color: brown;
+	font-size: 30px;
+	cursor: pointer;
+}

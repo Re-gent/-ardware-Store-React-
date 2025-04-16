@@ -1,8 +1,17 @@
+import { ShoppingOutlined } from "@ant-design/icons";
 import { FavoriteIcon } from "./FavoriteIcon";
 
-export const ProductsCard = ({ product, onClickFavorites, favoritesIds }) => {
+export const ProductsCard = ({
+  product,
+  onClickFavorites,
+  favoritesIds,
+  onClickCart,
+  CartIds,
+}) => {
   /* диструкторизация */
   const { img, name, brand, rating, price, id } = product;
+// изменение цвета иконки в соответствии с выбором
+  const color = CartIds && CartIds.includes(id) ? "#449231" : "grey";
   return (
     <div className="prodactCard">
       <div className="CardPicture">
@@ -16,9 +25,25 @@ export const ProductsCard = ({ product, onClickFavorites, favoritesIds }) => {
           <h3>${price}</h3>
         </div>
 
-       {favoritesIds && (<div className="iconFavorite" onClick={() => onClickFavorites(product)}>
-          <FavoriteIcon active={favoritesIds.includes(id)} />
-        </div>)}
+        <div>
+        // отрисовка значка избранных товаров
+          {favoritesIds && (
+            <div
+              className="iconFavorite"
+              onClick={() => onClickFavorites(product)}
+            >
+              <FavoriteIcon active={favoritesIds.includes(id)} />
+            </div>
+          )}
+          // отрисовка значка корзины товаров
+          {CartIds && (
+            <div className="iconCart" onClick={() => onClickCart(product)}>
+              <ShoppingOutlined
+                style={{ fontSize: "35px", color: color, cursor: "pointer" }}
+              />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

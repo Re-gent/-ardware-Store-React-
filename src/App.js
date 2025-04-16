@@ -1,33 +1,47 @@
-// @ts-nocheck
 import { useEffect, useState } from "react";
 import "./App.css";
+// @ts-ignore
 import { Header } from "./Components/Header";
+// @ts-ignore
 import { ProductsCard } from "./Components/productsCard";
+// @ts-ignore
 import { NavBar } from "./Components/NavBar";
 import { Route, Routes } from "react-router-dom";
 import { Main } from "./pages/main/Main";
-import { FavoritePage } from "./pages/favorite/FavoritePage";
-import { fetchFavorites } from "./pages/favorite/FavoritesSlice";
-import { useDispatch } from "react-redux";
+import { FavoritePage } from "./pages/favorite";
+import {
+  addToFavorites,
+  deleteFavorites,
+  fetchFavorites,
+} from "./pages/favorite/FavoritesSlice";
+import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "./pages/main/productsSlice";
+import { CartPage } from "./pages/cart";
+import { loadCart } from "./pages/cart/slices";
 
 function App() {
   // const [users, setUsers] = useState([]);
   const [inputName, setInputName] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [sort, setSort] = useState("asc");
+  const [sort, setSort] = useState("");
+  // @ts-ignore
+  const favorites = useSelector((state) => state.favorites.favorites);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     //setLoading(true);
     // этот код выполнится один раз при создании компонета.
+    // @ts-ignore
     dispatch(fetchProducts({ inputName, selectedCategory, sort }));
   }, [inputName, selectedCategory, sort]);
 
   useEffect(() => {
     //loadFavorite();
+    // @ts-ignore
     dispatch(fetchFavorites());
+    // @ts-ignore
+    dispatch(loadCart());
   }, []);
 
   const handInput = (text) => {
@@ -49,6 +63,18 @@ function App() {
     }
     setSort(order);
   };
+
+  const onClickFavorites = (product) => {
+    /* возвращает true, усли хотя бы на одном из элементов выполняется условие */
+    if (favorites.some((el) => el.id === product.id)) {
+      // @ts-ignore
+      dispatch(deleteFavorites(product.id));
+    } else {
+      // @ts-ignore
+      dispatch(addToFavorites(product));
+    }
+  };
+
   return (
     <div>
       <Routes>
@@ -56,6 +82,7 @@ function App() {
           path="/"
           element={
             <Main
+              onClickFavorites={onClickFavorites}
               sort={sort}
               handleChangeSort={handleChangeSort}
               handInput={handInput}
@@ -66,6 +93,10 @@ function App() {
         />
 
         <Route path="/favorite" element={<FavoritePage />} />
+        <Route
+          path="/cart"
+          element={<CartPage onClickFavorites={onClickFavorites} />}
+        />
       </Routes>
     </div>
   );
