@@ -1,8 +1,8 @@
 
 import { useState } from "react";
-import { Header } from "../../Components/Header";
-import { NavBar } from "../../Components/NavBar";
-import { ProductsCard } from "../../Components/productsCard";
+import { Header } from "../../Components/header/Header";
+import { NavBar } from "../../Components/navBar";
+import { ProductsCard } from "../../Components/productCard";
 import { useDispatch, useSelector } from "react-redux";
 import { Sort } from "../../Components/Sort/Sort";
 

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { ToFavoriteButton } from "./toFavoriteButton";
-import { ToCartButton } from "./toCartButton";
+import { ToFavoriteButton } from "../toFavoriteButton";
+import { ToCartButton } from "../toCartButton";
+import "./index.scss"
 
 export const ProductsCard = ({
   product,
@@ -27,7 +28,7 @@ export const ProductsCard = ({
         </div>
         </Link>
 
-        <div>
+        <div className="iconsMainBlock" >
        {/*  отрисовка значка избранных товаров */}
           <ToFavoriteButton product={product} />
            {/* отрисовка значка корзины товаров */}

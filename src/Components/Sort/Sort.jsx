@@ -1,4 +1,4 @@
-import "./sort.css";
+import "./sort.scss";
 // сортировка товаров по цене
 export const Sort = ({ handleChangeSort, sort }) => {
   return (

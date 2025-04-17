@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { FavoriteIcon } from "./FavoriteIcon";
+import { FavoriteIcon } from "../FavoriteIcon";
 import { ShoppingOutlined } from "@ant-design/icons";
+import "./index.scss"
 
 export const Header = ({ handInput, handleOpenMenu }) => {
   return (

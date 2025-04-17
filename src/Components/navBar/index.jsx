@@ -1,3 +1,4 @@
+import "./index.scss"
 export const NavBar = ({handleChangeCategory, selectedCategory}) => {
   return(
   <div className="navBar">
