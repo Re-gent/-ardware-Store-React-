@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./index.css"
+import "./index.scss"
 //кнопка возврата на главную страницу
 export const LinkBack = () => {
   return (

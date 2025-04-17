@@ -6,6 +6,7 @@
       "name": "samsung S25",
       "price": 680,
       "category": "phone",
+      "description": "смартфон, Android, экран 6.9 AMOLED (1440x3120) 120 Гц, Qualcomm Snapdragon 8 Elite, ОЗУ 12 ГБ, память 256 ГБ, камера 200 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
       "rating": 4,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/J-I_JaxOCFhNxvSzK3-cDhPApqa6VesUkw2kOM7BgmA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvN2NiNTY1NzA1/NzlhZTczMjFjZjJh/YTdmMTIxNjlhOTMu/anBn"
@@ -16,6 +17,7 @@
       "name": "Gaming Monitor G27i",
       "price": 560,
       "category": "monitor",
+      "description": "27, 16:9, 1920x1080, IPS, 165 Гц, AMD FreeSync Premium, интерфейсы HDMI+DisplayPort",
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/a7O1EDaEHAva_ZCyc8hqdoaF9fdOFk6XFHOGZm9y_rU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMjBkM2Q2MGUy/N2MwYWJlZWQzOGYy/OWZiYzZmYTkzN2Uu/anBn"
@@ -26,6 +28,7 @@
       "name": "IdeaPad Slim 3",
       "price": 950,
       "category": "laptop",
+      "description": "15.6 1920 x 1080, IPS, 60 Гц, Intel Core i5 13420H, 16 ГБ LPDDR5, SSD 1024 ГБ, видеокарта встроенная, без ОС, цвет крышки серый, аккумулятор 47 Вт·ч",
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/paAPlEXfNVZ2Bz7Bc137zVeOFXHxgFzRgUWBXngizWA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvZDMzN2Y2ODY3/MjdjMzM3ZjZhZWEz/ZDMyZmE5ZDQ4Njku/anBn"
@@ -36,6 +39,7 @@
       "name": "Iphone 16",
       "price": 760,
       "category": "phone",
+      "description": "смартфон, Apple iOS, экран 6.1 OLED (1179x2556) 60 Гц, Apple A18, ОЗУ 8 ГБ, память 128 ГБ, камера 48 Мп, аккумулятор 3561 мАч, 1 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/J0yb5vVWNyvL2gXu4LKXh36lUpk8sGHBwuuaxazbOR8/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNjVhYTJkNGYx/ZDBjNjRiNjQ1OGQ2/ZGUyOWFmM2IwMDku/anBn"
@@ -46,6 +50,7 @@
       "name": "samsung S24",
       "price": 530,
       "category": "phone",
+      "description": "смартфон, Android, экран 6.8 AMOLED (1440x3120) 120 Гц, Qualcomm Snapdragon 8 Gen 3, ОЗУ 12 ГБ, память 256 ГБ, камера 200 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
       "rating": 3,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/cYOYwagP3kZNVWgI8oX1h2qcEgqBgVGQgajWbwFeIKs/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYjQ1NmJkN2Ex/ZGI3MTAxNDc5NWFl/MGMzOTQ3NjY4ZGYu/anBn"
@@ -56,6 +61,7 @@
       "name": "Redmi Note 14 Pro+",
       "price": 400,
       "category": "phone",
+      "description": "смартфон, Android, экран 6.67 AMOLED (1220x2712) 120 Гц, Qualcomm Snapdragon 7s Gen 3, ОЗУ 12 ГБ, память 512 ГБ, камера 200 Мп, аккумулятор 5110 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
       "rating": 3,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/JRmowke09RylA11Wc2PLtHdjuflFBTm3Msv1CEV1pFU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNTkxMDMyYTEw/OTE2ZjdjYTY3NzY5/Y2U2YzhmM2FhYjMu/anBn"
@@ -66,6 +72,7 @@
       "name": "Xiaomi 15 Ultra",
       "price": 660,
       "category": "phone",
+      "description": "смартфон, Android, экран 6.73 AMOLED (1440x3200) 120 Гц, Qualcomm Snapdragon 8 Elite, ОЗУ 16 ГБ, память 512 ГБ, камера 50 Мп, аккумулятор 5410 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/gqfmp5ZyAwrACWIjdeeDE5S3sPgUDNzNPDdrdf5KU2Q/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYzJhZDQ3YmIy/OTljZDhiOTIxZmMx/YWZmMjFjOGEwYTEu/anBn"
@@ -76,6 +83,7 @@
       "name": "Vivobook 16X",
       "price": 1470,
       "category": "laptop",
+      "description": "16.0 1920 x 1200, IPS, 60 Гц, AMD Ryzen 5 7430U, 16 ГБ DDR4, SSD 512 ГБ, видеокарта встроенная, без ОС, цвет крышки серебристый",
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/a8Qm7NhRtEt0oO4QsyOIuOGeiMXriynrxV3noeDWDhA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmE2OGE2ODc5/Y2Y2MzAzMjA0MTYw/ODJmMjliNjE5ZTYu/anBn"
@@ -86,6 +94,7 @@
       "name": "TUF Gaming A15",
       "price": 1280,
       "category": "laptop",
+      "description": "15.6' 1920 x 1080, IPS, 144 Гц, AMD Ryzen 7 7435HS, 16 ГБ DDR5, SSD 512 ГБ, видеокарта NVIDIA GeForce RTX 3050 4 ГБ (TGP 75 Вт), без ОС, цвет крышки черный, аккумулятор 48 Вт·ч",
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/TL0isupe2A1D7zjDgmbMzGAltab27faaj2w_fvTq_YA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmMwMzYyMTIx/M2VhNmQ1ZDNkNzYx/NTFlZTQ5YTQ1OTku/anBlZw"
@@ -96,6 +105,7 @@
       "name": "Macbook Air 13",
       "price": 2140,
       "category": "laptop",
+      "description": "13.6' 2560 x 1664, IPS, 60 Гц, Apple M4 (10 ядер), 16 ГБ, SSD 256 ГБ, видеокарта встроенная, Mac OS, цвет крышки голубой, аккумулятор 53.8 Вт·ч",
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/vWmTOLSmgT_th1WW7SauBfMDX27FStMx3fWecwC8MjM/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvOWEwOGU1ZjU0/MDBlNTA4ZmI5NzVi/ZjY5NzY2OWMyYjUu/anBlZw"
@@ -106,6 +116,7 @@
       "name": "2K Monitor A27Qi",
       "price": 580,
       "category": "monitor",
+      "description": "2, 16:9, 2560x1440, IPS, 100 Гц, интерфейсы HDMI+DisplayPort",
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/sWD7MBCXIqQfS3AOv0-5ADWwvZ4lHzUDsX9HpKxLlgk/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNDIyNGZmNWZk/ZWIwMDNhMDI3YTg1/ZDJhMTdmZTJkZWMu/anBn"
@@ -116,6 +127,7 @@
       "name": "UltraWide 34WP65C-B",
       "price": 890,
       "category": "monitor",
+      "description": "34', 21:9, 3440x1440, VA, изогнутый (1800R), 160 Гц, AMD FreeSync Premium, динамики, интерфейсы HDMI+DisplayPort, регулировка высоты",
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/CP5L1dQIKPJfhFgIxcDm8N_PlA58GB7b-Q6Yha2_Bqo/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMzA5NTZmNzhk/ZDJmNjNiYjk0YTdh/ODRjODVmODRjZDgu/anBlZw"
@@ -123,14 +135,15 @@
   ],
   "favorites": [
     {
-      "id": 11,
+      "id": 2,
       "brand": "Xiaomi",
-      "name": "2K Monitor A27Qi",
-      "price": 580,
+      "name": "Gaming Monitor G27i",
+      "price": 560,
       "category": "monitor",
+      "description": "27, 16:9, 1920x1080, IPS, 165 Гц, AMD FreeSync Premium, интерфейсы HDMI+DisplayPort",
       "rating": 5,
       "quantity": 1,
-      "img": "https://imgproxy.onliner.by/sWD7MBCXIqQfS3AOv0-5ADWwvZ4lHzUDsX9HpKxLlgk/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNDIyNGZmNWZk/ZWIwMDNhMDI3YTg1/ZDJhMTdmZTJkZWMu/anBn"
+      "img": "https://imgproxy.onliner.by/a7O1EDaEHAva_ZCyc8hqdoaF9fdOFk6XFHOGZm9y_rU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMjBkM2Q2MGUy/N2MwYWJlZWQzOGYy/OWZiYzZmYTkzN2Uu/anBn"
     },
     {
       "id": 6,
@@ -138,50 +151,23 @@
       "name": "Redmi Note 14 Pro+",
       "price": 400,
       "category": "phone",
+      "description": "смартфон, Android, экран 6.67 AMOLED (1220x2712) 120 Гц, Qualcomm Snapdragon 7s Gen 3, ОЗУ 12 ГБ, память 512 ГБ, камера 200 Мп, аккумулятор 5110 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
       "rating": 3,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/JRmowke09RylA11Wc2PLtHdjuflFBTm3Msv1CEV1pFU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNTkxMDMyYTEw/OTE2ZjdjYTY3NzY5/Y2U2YzhmM2FhYjMu/anBn"
-    },
-    {
-      "id": 7,
-      "brand": "Xiaomi",
-      "name": "Xiaomi 15 Ultra",
-      "price": 660,
-      "category": "phone",
-      "rating": 5,
-      "quantity": 1,
-      "img": "https://imgproxy.onliner.by/gqfmp5ZyAwrACWIjdeeDE5S3sPgUDNzNPDdrdf5KU2Q/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYzJhZDQ3YmIy/OTljZDhiOTIxZmMx/YWZmMjFjOGEwYTEu/anBn"
-    },
-    {
-      "id": 2,
-      "brand": "Xiaomi",
-      "name": "Gaming Monitor G27i",
-      "price": 560,
-      "category": "monitor",
-      "rating": 5,
-      "quantity": 1,
-      "img": "https://imgproxy.onliner.by/a7O1EDaEHAva_ZCyc8hqdoaF9fdOFk6XFHOGZm9y_rU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMjBkM2Q2MGUy/N2MwYWJlZWQzOGYy/OWZiYzZmYTkzN2Uu/anBn"
-    },
-    {
-      "id": 10,
-      "brand": "apple",
-      "name": "Macbook Air 13",
-      "price": 2140,
-      "category": "laptop",
-      "rating": 5,
-      "quantity": 1,
-      "img": "https://imgproxy.onliner.by/vWmTOLSmgT_th1WW7SauBfMDX27FStMx3fWecwC8MjM/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvOWEwOGU1ZjU0/MDBlNTA4ZmI5NzVi/ZjY5NzY2OWMyYjUu/anBlZw"
-    },
-    {
-      "id": 3,
-      "brand": "Lenovo",
-      "name": "IdeaPad Slim 3",
-      "price": 950,
-      "category": "laptop",
-      "rating": 5,
-      "quantity": 1,
-      "img": "https://imgproxy.onliner.by/paAPlEXfNVZ2Bz7Bc137zVeOFXHxgFzRgUWBXngizWA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvZDMzN2Y2ODY3/MjdjMzM3ZjZhZWEz/ZDMyZmE5ZDQ4Njku/anBn"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 9,
+      "brand": "ASUS",
+      "name": "TUF Gaming A15",
+      "price": 1280,
+      "category": "laptop",
+      "description": "15.6' 1920 x 1080, IPS, 144 Гц, AMD Ryzen 7 7435HS, 16 ГБ DDR5, SSD 512 ГБ, видеокарта NVIDIA GeForce RTX 3050 4 ГБ (TGP 75 Вт), без ОС, цвет крышки черный, аккумулятор 48 Вт·ч",
+      "rating": 5,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/TL0isupe2A1D7zjDgmbMzGAltab27faaj2w_fvTq_YA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmMwMzYyMTIx/M2VhNmQ1ZDNkNzYx/NTFlZTQ5YTQ1OTku/anBlZw"
+    }
+  ]
 }

@@ -1,0 +1,14 @@
+.header {
+  background-color: tomato;
+  height: 70px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  
+  input{
+    height: 30px;
+    width: 800px;
+  }
+}

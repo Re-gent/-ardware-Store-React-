@@ -25,7 +25,7 @@ export const ToFavoriteButton = ({ product }) => {
 
   const isFavorite = favorites.some((item) => item.id === product.id);
   return (
-    <div className="iconFavorite" onClick={onClickFavorites}>
+    <div onClick={onClickFavorites}>
       <FavoriteIcon active={isFavorite} />
     </div>
   );

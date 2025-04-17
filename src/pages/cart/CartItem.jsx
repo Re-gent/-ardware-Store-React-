@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import "./index.css";
+import "./index.scss";
 import { deleteCart, updateProductCart } from "./slices";
 import { DeleteOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./App.css";
+import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import { Main } from "./pages/main/Main";
 import { FavoritePage } from "./pages/favorite";

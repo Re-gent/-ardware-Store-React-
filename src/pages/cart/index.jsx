@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { LinkBack } from "../../Components/LinkBack";
 import { useSelector } from "react-redux";
 import { CartItem } from "./CartItem";
-import "./index.css";
+import "./index.scss";
 
 export const CartPage = () => {
   const { cart } = useSelector((state) => state.cart);
