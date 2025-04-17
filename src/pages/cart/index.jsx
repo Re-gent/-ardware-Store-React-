@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { CartItem } from "./CartItem";
 import "./index.css";
 
-export const CartPage = ({ onClickFavorites }) => {
+export const CartPage = () => {
   const { cart } = useSelector((state) => state.cart);
 
   // подсчет итоговой цены на странице карзины товаров
@@ -27,7 +27,6 @@ export const CartPage = ({ onClickFavorites }) => {
             <CartItem
               key={el.id}
               product={el}
-              onClickFavorites={onClickFavorites}
             />
           ))
         ) : (
@@ -36,7 +35,7 @@ export const CartPage = ({ onClickFavorites }) => {
       </div>
       <div className="totalPriceBlock">
         <div className="totalPriceRow">
-          <div>Количество шт:</div>&nbsp;&nbsp; // отступ в обход CSS
+          <div>Количество шт:</div>&nbsp;&nbsp;  {/* отступ в обход CSS */}
           <b>{productCount}</b>
         </div>
         <div className="totalPriceRow">

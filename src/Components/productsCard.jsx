@@ -1,11 +1,9 @@
-import { ShoppingOutlined } from "@ant-design/icons";
-import { FavoriteIcon } from "./FavoriteIcon";
+import { Link } from "react-router-dom";
+import { ToFavoriteButton } from "./toFavoriteButton";
+import { ToCartButton } from "./toCartButton";
 
 export const ProductsCard = ({
   product,
-  onClickFavorites,
-  favoritesIds,
-  onClickCart,
   CartIds,
 }) => {
   /* диструкторизация */
@@ -15,34 +13,25 @@ export const ProductsCard = ({
   return (
     <div className="prodactCard">
       <div className="CardPicture">
+      <Link to={`/product/${id}`}>
         <img width={160} src={img} alt="фото тавара" />
+        </Link>
       </div>
       <div className="cardContent">
+      <Link to={`/product/${id}`}>
         <div>
           <div>{name}</div>
           <h3>{brand}</h3>
           <div>рейтинг:{rating}</div>
           <h3>${price}</h3>
         </div>
+        </Link>
 
         <div>
-        // отрисовка значка избранных товаров
-          {favoritesIds && (
-            <div
-              className="iconFavorite"
-              onClick={() => onClickFavorites(product)}
-            >
-              <FavoriteIcon active={favoritesIds.includes(id)} />
-            </div>
-          )}
-          // отрисовка значка корзины товаров
-          {CartIds && (
-            <div className="iconCart" onClick={() => onClickCart(product)}>
-              <ShoppingOutlined
-                style={{ fontSize: "35px", color: color, cursor: "pointer" }}
-              />
-            </div>
-          )}
+       {/*  отрисовка значка избранных товаров */}
+          <ToFavoriteButton product={product} />
+           {/* отрисовка значка корзины товаров */}
+           <ToCartButton product={product} />
         </div>
       </div>
     </div>

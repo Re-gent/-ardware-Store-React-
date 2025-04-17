@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./index.css"
-
+//кнопка возврата на главную страницу
 export const LinkBack = () => {
   return (
     <div className="linkBack">

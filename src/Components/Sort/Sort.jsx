@@ -1,5 +1,5 @@
 import "./sort.css";
-
+// сортировка товаров по цене
 export const Sort = ({ handleChangeSort, sort }) => {
   return (
     <div className="sort">
