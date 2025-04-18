@@ -3,9 +3,7 @@ import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import { Main } from "./pages/main/Main";
 import { FavoritePage } from "./pages/favorite";
-import {
-  fetchFavorites,
-} from "./pages/favorite/FavoritesSlice";
+import { fetchFavorites } from "./pages/favorite/FavoritesSlice";
 import { useDispatch } from "react-redux";
 import { fetchProducts } from "./pages/main/productsSlice";
 import { CartPage } from "./pages/cart";
@@ -17,15 +15,16 @@ function App() {
   const [inputName, setInputName] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [sort, setSort] = useState("");
-
+  const [price, setPrice] = useState({ priceFrom: null, priceTo: null });
+  console.log(price);
   const dispatch = useDispatch();
 
   useEffect(() => {
     //setLoading(true);
     // этот код выполнится один раз при создании компонета.
     // @ts-ignore
-    dispatch(fetchProducts({ inputName, selectedCategory, sort }));
-  }, [inputName, selectedCategory, sort]);
+    dispatch(fetchProducts({ inputName, selectedCategory, sort, price }));
+  }, [inputName, selectedCategory, sort, price]);
 
   useEffect(() => {
     //loadFavorite();
@@ -62,6 +61,8 @@ function App() {
           path="/"
           element={
             <Main
+              setPrice={setPrice}
+              price={price}
               sort={sort}
               handleChangeSort={handleChangeSort}
               handInput={handInput}
@@ -73,10 +74,7 @@ function App() {
 
         <Route path="/favorite" element={<FavoritePage />} />
         <Route path="/product/:id" element={<Product />} />
-        <Route
-          path="/cart"
-          element={<CartPage/>}
-        />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
     </div>
   );
