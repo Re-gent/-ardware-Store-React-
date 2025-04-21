@@ -15,16 +15,20 @@ function App() {
   const [inputName, setInputName] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [sort, setSort] = useState("");
+  const [page, setPage] = useState(1);
   const [price, setPrice] = useState({ priceFrom: null, priceTo: null });
-  console.log(price);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    setPage(1);
+  }, [inputName, selectedCategory, sort, price]);
 
   useEffect(() => {
     //setLoading(true);
     // этот код выполнится один раз при создании компонета.
     // @ts-ignore
-    dispatch(fetchProducts({ inputName, selectedCategory, sort, price }));
-  }, [inputName, selectedCategory, sort, price]);
+    dispatch(fetchProducts({ inputName, selectedCategory, sort, price, page }));
+  }, [inputName, selectedCategory, sort, price, page]);
 
   useEffect(() => {
     //loadFavorite();
@@ -61,6 +65,7 @@ function App() {
           path="/"
           element={
             <Main
+            
               setPrice={setPrice}
               price={price}
               sort={sort}
@@ -68,6 +73,8 @@ function App() {
               handInput={handInput}
               handleChangeCategory={handleChangeCategory}
               selectedCategory={selectedCategory}
+              page={page}
+              setPage={setPage}
             />
           }
         />

@@ -7,7 +7,7 @@ export const fetchProducts = createAsyncThunk(
     /* запрос к серверу _like -- нестрогое равенство
 	?q=....&-- квери-запросы*/
     /* поиск по категориям в меню и через поиск через  Back-end*/
-    const { selectedCategory, inputName, sort, price } = params;
+    const { selectedCategory, inputName, sort, price,page } = params;
 
     const sortQuery = sort ? `&_sort=price&_order=${sort}` : "";
     const priceQuery = price
@@ -17,7 +17,7 @@ export const fetchProducts = createAsyncThunk(
     const priceTo = price.priceTo ? `&price_lte=${price.priceTo}` : "";
 
     const response = await fetch(
-      `http://localhost:5000/products?q=${inputName}&category_like=${selectedCategory}${sortQuery}${priceFrom}${priceTo}`
+      `http://localhost:5000/products?_page=${page}page&q=${inputName}&category_like=${selectedCategory}${sortQuery}${priceFrom}${priceTo}`
     );
     const result = await response.json();
     return result;

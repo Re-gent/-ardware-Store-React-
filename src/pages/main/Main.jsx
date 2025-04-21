@@ -4,7 +4,7 @@ import { NavBar } from "../../Components/navBar";
 import { ProductsCard } from "../../Components/productCard";
 import { useDispatch, useSelector } from "react-redux";
 import { Sort } from "../../Components/Sort/Sort";
-import { Drawer } from "antd";
+import { Drawer, Pagination } from "antd";
 
 export const Main = ({
   handInput,
@@ -13,7 +13,9 @@ export const Main = ({
   handleChangeSort,
   sort,
   setPrice,
-  price
+  price,
+  setPage,
+  page
 }) => {
   const [openNavbar, setOpenNavbar] = useState(false);
   // @ts-ignore
@@ -33,8 +35,8 @@ export const Main = ({
         onClose={() => setOpenNavbar(false)}
       >
         <NavBar
-        setPrice={setPrice}
-        price={price}
+          setPrice={setPrice}
+          price={price}
           handleChangeCategory={handleChangeCategory}
           selectedCategory={selectedCategory}
         />
@@ -48,6 +50,7 @@ export const Main = ({
           <ProductsCard key={el.id} product={el} />
         ))}
       </div>
+      <Pagination current ={page} total={22} onChange={(page) => setPage(page)} />
     </>
   );
 };
