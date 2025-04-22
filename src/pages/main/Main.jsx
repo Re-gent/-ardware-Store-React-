@@ -6,17 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Sort } from "../../Components/Sort/Sort";
 import { Drawer, Pagination } from "antd";
 
-export const Main = ({
-  handInput,
-  handleChangeCategory,
-  selectedCategory,
-  handleChangeSort,
-  sort,
-  setPrice,
-  price,
-  setPage,
-  page
-}) => {
+export const Main = ({ searchParams, handleChangeFilters }) => {
   const [openNavbar, setOpenNavbar] = useState(false);
   // @ts-ignore
   const { products, loading } = useSelector((state) => state.products);
@@ -27,7 +17,11 @@ export const Main = ({
 
   return (
     <>
-      <Header handInput={handInput} handleOpenMenu={handleOpenMenu} />
+      <Header
+        searchParams={searchParams}
+        handleChangeFilters={handleChangeFilters}
+        handleOpenMenu={handleOpenMenu}
+      />
       <Drawer
         title="Категории"
         open={openNavbar}
@@ -35,14 +29,15 @@ export const Main = ({
         onClose={() => setOpenNavbar(false)}
       >
         <NavBar
-          setPrice={setPrice}
-          price={price}
-          handleChangeCategory={handleChangeCategory}
-          selectedCategory={selectedCategory}
+          handleChangeFilters={handleChangeFilters}
+          searchParams={searchParams}
         />
       </Drawer>
 
-      <Sort sort={sort} handleChangeSort={handleChangeSort} />
+      <Sort
+        searchParams={searchParams}
+        handleChangeFilters={handleChangeFilters}
+      />
       {loading && <h1>Loading...</h1>}
       <div className="cardBlock">
         {products.map((el) => (
@@ -50,7 +45,11 @@ export const Main = ({
           <ProductsCard key={el.id} product={el} />
         ))}
       </div>
-      <Pagination current ={page} total={22} onChange={(page) => setPage(page)} />
+      <Pagination
+        current={searchParams.get("_page")}
+        total={22}
+        onChange={(page) => handleChangeFilters("_page", page)}
+      />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.scss";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useSearchParams } from "react-router-dom";
 import { Main } from "./pages/main/Main";
 import { FavoritePage } from "./pages/favorite";
 import { fetchFavorites } from "./pages/favorite/FavoritesSlice";
@@ -11,34 +11,53 @@ import { loadCart } from "./pages/cart/slices";
 import { Product } from "./pages/product";
 
 function App() {
-  // const [users, setUsers] = useState([]);
-  const [inputName, setInputName] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("");
-  const [sort, setSort] = useState("");
-  const [page, setPage] = useState(1);
-  const [price, setPrice] = useState({ priceFrom: null, priceTo: null });
+  let [searchParams, setSearchParams] = useSearchParams();
+
   const dispatch = useDispatch();
 
-  useEffect(() => {
+  const copyParams = new URLSearchParams(searchParams);
+
+  const handleChangeFilters = (key, value) => {
+  
+    if (copyParams.get(key) === value || !value) {
+      copyParams.delete(key)
+      key === "_order" && copyParams.delete("_sort")
+    }else if(key === "_order") {
+      copyParams.set("_sort", "price");
+      copyParams.set("_order", value);
+    }else {
+      copyParams.set(key, value);
+    }
+    if(key !== '_page'){
+      copyParams.set('_page', "1")
+    }
+    setSearchParams(copyParams);
+  };
+
+  /* useEffect(() => {
     setPage(1);
   }, [inputName, selectedCategory, sort, price]);
-
+ */
   useEffect(() => {
     //setLoading(true);
     // этот код выполнится один раз при создании компонета.
-    // @ts-ignore
-    dispatch(fetchProducts({ inputName, selectedCategory, sort, price, page }));
-  }, [inputName, selectedCategory, sort, price, page]);
+    if (searchParams) {
+      // @ts-ignore
+      dispatch(fetchProducts(searchParams.toString()));
+    }
+  }, [searchParams]);
 
   useEffect(() => {
+    copyParams.set("_page", "1")
+    setSearchParams(copyParams)
     //loadFavorite();
     // @ts-ignore
     dispatch(fetchFavorites());
     // @ts-ignore
     dispatch(loadCart());
   }, []);
-
-  const handInput = (text) => {
+  /* Данный способ фильтрации был заменен на реализацию с помощью React Router (useSearchParams)  */
+  /* const handInput = (text) => {
     setInputName(text);
   };
 
@@ -56,27 +75,15 @@ function App() {
       return;
     }
     setSort(order);
-  };
+  }; */
 
   return (
     <div>
       <Routes>
         <Route
           path="/"
-          element={
-            <Main
-            
-              setPrice={setPrice}
-              price={price}
-              sort={sort}
-              handleChangeSort={handleChangeSort}
-              handInput={handInput}
-              handleChangeCategory={handleChangeCategory}
-              selectedCategory={selectedCategory}
-              page={page}
-              setPage={setPage}
-            />
-          }
+          // @ts-ignore
+          element={<Main searchParams={searchParams} handleChangeFilters={handleChangeFilters} />}
         />
 
         <Route path="/favorite" element={<FavoritePage />} />
