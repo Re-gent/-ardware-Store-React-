@@ -164,7 +164,8 @@
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/NdeJGsf_5zTkc4aXnv39aDBShTlLguidl0vBfHGP6pk/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYTYxMjc2NDgy/ZjhkYWNiNzNmMmM4/OWVlMmMxMjE5ODcu/anBn"
-    },{
+    },
+    {
       "id": 16,
       "brand": "Apple ",
       "name": "iPhone 16 Pro Max",
@@ -174,7 +175,8 @@
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/uwThPxDFivMNBKhaloHa7cPFRF0Lfpg9XmPPn8wKxNE/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvOTEyODQyNzVk/OGFkZDNkMzA0ZjIw/OTE4N2E2MDg1ZWYu/anBn"
-    },{
+    },
+    {
       "id": 17,
       "brand": "Lenovo  ",
       "name": "Lenovo LOQ 15IAX9 83GS005NRK",
@@ -184,7 +186,8 @@
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/RCkFgMHBn-fkh1nUOMPfusjcb4qER6ejw_zNpSL7hQk/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNzQ2OTQxNjMy/OTc0MDM3ZDFkYmU0/ZTZlM2JmNjEzOTQu/anBn"
-    },{
+    },
+    {
       "id": 18,
       "brand": "Dell",
       "name": "Vostro 15 3520 HDL5A9102X4",
@@ -194,7 +197,8 @@
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/EpxodmLqWX70HsDPFEJ4lZphI8xuxqQ8yJOB9UUC_sY/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMjhlMTA3OWNm/MDNjOWViNjVmODA1/NzljYTM1YTc0NjQu/anBlZw"
-    },{
+    },
+    {
       "id": 19,
       "brand": "Lenovo",
       "name": "Legion 5 R7000 83LQ0005CD",
@@ -204,7 +208,8 @@
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/wy3buFWbrnSfSQNCvo6tfJV80JsxMaOVyMoLSRUEgGI/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNzYwODFjZWFm/NmNlZjA1ZWJlNDhi/NzA5MTQxM2FmZGQu/anBn"
-    },{
+    },
+    {
       "id": 20,
       "brand": "Xiaomi ",
       "name": "Xiaomi Redmi Gaming Monitor G24 P24FCA-RG",
@@ -214,7 +219,8 @@
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/NmaotjuZH21TsMaHwz-92JDqpjeNTpJz71wUJHkWzTc/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvOWNjZDcwMmI3/MmUxZDUzZGY0NWQw/ZGQ4YTlmZWJkNmYu/anBn"
-    },{
+    },
+    {
       "id": 21,
       "brand": "Xiaomi ",
       "name": "Redmi Surface Display G34WQ C34WQBA-RG",
@@ -224,7 +230,8 @@
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/x6PrCTiAeOwaqEQ4i0JtAoE6-CoIcopiAjSSr-AAbv8/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMzU1ZTkzMmJj/MjhkNzRmY2QyODJh/NWZmN2FmMWZkYTEu/anBn"
-    },{
+    },
+    {
       "id": 22,
       "brand": "ExeGate  ",
       "name": "Combat EG2707A EX295595RUS",
@@ -236,63 +243,18 @@
       "img": "https://imgproxy.onliner.by/D0iLIka5k8ga2DgaQ09s1REKGeR62sG2be6BolaMzTw/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmEyMzMwNzU3/MWU3OTk0MTQzOTM3/ZTJjZTc2NTY1OTgu/anBn"
     }
   ],
-  "favorites": [
-    {
-      "id": 2,
-      "brand": "Xiaomi",
-      "name": "Gaming Monitor G27i",
-      "price": 560,
-      "category": "monitor",
-      "description": "27, 16:9, 1920x1080, IPS, 165 Гц, AMD FreeSync Premium, интерфейсы HDMI+DisplayPort",
-      "rating": 5,
-      "quantity": 1,
-      "img": "https://imgproxy.onliner.by/a7O1EDaEHAva_ZCyc8hqdoaF9fdOFk6XFHOGZm9y_rU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMjBkM2Q2MGUy/N2MwYWJlZWQzOGYy/OWZiYzZmYTkzN2Uu/anBn"
-    },
-    {
-      "id": 6,
-      "brand": "Xiaomi",
-      "name": "Redmi Note 14 Pro+",
-      "price": 400,
-      "category": "phone",
-      "description": "смартфон, Android, экран 6.67 AMOLED (1220x2712) 120 Гц, Qualcomm Snapdragon 7s Gen 3, ОЗУ 12 ГБ, память 512 ГБ, камера 200 Мп, аккумулятор 5110 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
-      "rating": 3,
-      "quantity": 1,
-      "img": "https://imgproxy.onliner.by/JRmowke09RylA11Wc2PLtHdjuflFBTm3Msv1CEV1pFU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNTkxMDMyYTEw/OTE2ZjdjYTY3NzY5/Y2U2YzhmM2FhYjMu/anBn"
-    }
-  ],
+  "favorites": [],
   "cart": [
     {
-      "id": 9,
-      "brand": "ASUS",
-      "name": "TUF Gaming A15",
-      "price": 1280,
-      "category": "laptop",
-      "description": "15.6' 1920 x 1080, IPS, 144 Гц, AMD Ryzen 7 7435HS, 16 ГБ DDR5, SSD 512 ГБ, видеокарта NVIDIA GeForce RTX 3050 4 ГБ (TGP 75 Вт), без ОС, цвет крышки черный, аккумулятор 48 Вт·ч",
-      "rating": 5,
+      "id": 5,
+      "brand": "samsung",
+      "name": "samsung S24",
+      "price": 530,
+      "category": "phone",
+      "description": "смартфон, Android, экран 6.8 AMOLED (1440x3120) 120 Гц, Qualcomm Snapdragon 8 Gen 3, ОЗУ 12 ГБ, память 256 ГБ, камера 200 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
+      "rating": 3,
       "quantity": 1,
-      "img": "https://imgproxy.onliner.by/TL0isupe2A1D7zjDgmbMzGAltab27faaj2w_fvTq_YA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmMwMzYyMTIx/M2VhNmQ1ZDNkNzYx/NTFlZTQ5YTQ1OTku/anBlZw"
-    },
-    {
-      "id": 2,
-      "brand": "Xiaomi",
-      "name": "Gaming Monitor G27i",
-      "price": 560,
-      "category": "monitor",
-      "description": "27, 16:9, 1920x1080, IPS, 165 Гц, AMD FreeSync Premium, интерфейсы HDMI+DisplayPort",
-      "rating": 5,
-      "quantity": 1,
-      "img": "https://imgproxy.onliner.by/a7O1EDaEHAva_ZCyc8hqdoaF9fdOFk6XFHOGZm9y_rU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMjBkM2Q2MGUy/N2MwYWJlZWQzOGYy/OWZiYzZmYTkzN2Uu/anBn"
-    },
-    {
-      "id": 3,
-      "brand": "Lenovo",
-      "name": "IdeaPad Slim 3",
-      "price": 950,
-      "category": "laptop",
-      "description": "15.6 1920 x 1080, IPS, 60 Гц, Intel Core i5 13420H, 16 ГБ LPDDR5, SSD 1024 ГБ, видеокарта встроенная, без ОС, цвет крышки серый, аккумулятор 47 Вт·ч",
-      "rating": 5,
-      "quantity": 1,
-      "img": "https://imgproxy.onliner.by/paAPlEXfNVZ2Bz7Bc137zVeOFXHxgFzRgUWBXngizWA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvZDMzN2Y2ODY3/MjdjMzM3ZjZhZWEz/ZDMyZmE5ZDQ4Njku/anBn"
+      "img": "https://imgproxy.onliner.by/cYOYwagP3kZNVWgI8oX1h2qcEgqBgVGQgajWbwFeIKs/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYjQ1NmJkN2Ex/ZGI3MTAxNDc5NWFl/MGMzOTQ3NjY4ZGYu/anBn"
     }
   ],
   "comments": [

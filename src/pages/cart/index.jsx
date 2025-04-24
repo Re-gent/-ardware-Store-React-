@@ -9,16 +9,16 @@ export const CartPage = () => {
   const { cart } = useSelector((state) => state.cart);
 
   // подсчет итоговой цены на странице карзины товаров
-  let totalPrice = cart.reduce(
+  const totalPrice = cart.reduce(
       // acc -- аккумулятор, который хранит в себе мат. действия, совершенные над параметрами товаров в корзине товаров 
     (acc, product) => acc + product.quantity * product.price,
     0
   );
-  let productCount = cart.reduce(
+  const productCount = cart.reduce(
     (acc, product) => acc + product.quantity,
     0
   );;
-  console.log(cart);
+
   return (
     <div>
       <div className="">

@@ -18,18 +18,17 @@ function App() {
   const copyParams = new URLSearchParams(searchParams);
 
   const handleChangeFilters = (key, value) => {
-  
     if (copyParams.get(key) === value || !value) {
-      copyParams.delete(key)
-      key === "_order" && copyParams.delete("_sort")
-    }else if(key === "_order") {
+      copyParams.delete(key);
+      key === "_order" && copyParams.delete("_sort");
+    } else if (key === "_order") {
       copyParams.set("_sort", "price");
       copyParams.set("_order", value);
-    }else {
+    } else {
       copyParams.set(key, value);
     }
-    if(key !== '_page'){
-      copyParams.set('_page', "1")
+    if (key !== "_page") {
+      copyParams.set("_page", "1");
     }
     setSearchParams(copyParams);
   };
@@ -48,8 +47,8 @@ function App() {
   }, [searchParams]);
 
   useEffect(() => {
-    copyParams.set("_page", "1")
-    setSearchParams(copyParams)
+    copyParams.set("_page", "1");
+    setSearchParams(copyParams);
     //loadFavorite();
     // @ts-ignore
     dispatch(fetchFavorites());
@@ -83,7 +82,12 @@ function App() {
         <Route
           path="/"
           // @ts-ignore
-          element={<Main searchParams={searchParams} handleChangeFilters={handleChangeFilters} />}
+          element={
+            <Main
+              searchParams={searchParams}
+              handleChangeFilters={handleChangeFilters}
+            />
+          }
         />
 
         <Route path="/favorite" element={<FavoritePage />} />
