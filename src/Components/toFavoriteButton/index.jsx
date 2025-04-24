@@ -1,4 +1,4 @@
-import { ShoppingOutlined } from "@ant-design/icons";
+import { HeartFilled, HeartOutlined, ShoppingOutlined } from "@ant-design/icons";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addToFavorites,
@@ -26,7 +26,13 @@ export const ToFavoriteButton = ({ product }) => {
   const isFavorite = favorites.some((item) => item.id === product.id);
   return (
     <div onClick={onClickFavorites}>
-      <FavoriteIcon active={isFavorite} />
+      {isFavorite ? (
+        <HeartFilled style={{ fontSize: "35px", color: "#e00000",cursor: "pointer"}} />
+      ) : (
+        <HeartOutlined style={{ fontSize: "35px", color: "grey",cursor: "pointer"}} />
+      )}
+
+      {/* <FavoriteIcon active={isFavorite} /> */}
     </div>
   );
 };

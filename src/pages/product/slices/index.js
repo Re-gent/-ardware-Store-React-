@@ -11,9 +11,33 @@ export const loadProduct = createAsyncThunk(
   }
 );
 
+export const loadComments = createAsyncThunk(
+  "products/loadComment",
+  async (id,thunkAPI) => {
+    const result = await fetch(`http://localhost:5000/comments?productID=${id}`);
+    const data = await result.json();
+    return data
+  }
+);
+
+export const createComment = createAsyncThunk(
+  "products/createComment",
+  async (comment, { dispatch }) => {
+    await fetch(`http://localhost:5000/comments`, {
+      method: "POST",
+      body: JSON.stringify(comment),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    dispatch(loadComments(comment.productID));
+  }
+);
 
 const initialState = {
   product: null,
+  comments: [],
 };
 
 export const productSlice = createSlice({
@@ -25,7 +49,6 @@ export const productSlice = createSlice({
 		}, */
   },
   extraReducers: (builder) => {
- 
     builder.addCase(loadProduct.fulfilled, (state, action) => {
       /* данные приходят с сервера */
       state.product = action.payload;
@@ -33,7 +56,13 @@ export const productSlice = createSlice({
     builder.addCase(loadProduct.rejected, (state, action) => {
       console.log("запрос упал с ошибкой");
     });
+
+    builder.addCase(loadComments.fulfilled, (state, action) => {
+      state.comments = action.payload;
+    });
   },
+
+
 });
 
 export default productSlice.reducer;
