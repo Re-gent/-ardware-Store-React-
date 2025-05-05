@@ -7,6 +7,7 @@ export const FavoritePage = ({ favoriteProducts }) => {
       <div className="cardBlock">
         {favoriteProducts.length ? (
           favoriteProducts.map((el) => 
+            // @ts-ignore
             <ProductsCard key={el.id} product={el} />
 
           )
