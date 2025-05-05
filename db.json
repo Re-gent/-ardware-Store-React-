@@ -4,138 +4,357 @@
       "id": 1,
       "brand": "samsung",
       "name": "samsung S25",
-      "price": 300,
+      "price": 680,
       "category": "phone",
+      "description": "смартфон, Android, экран 6.9 AMOLED (1440x3120) 120 Гц, Qualcomm Snapdragon 8 Elite, ОЗУ 12 ГБ, память 256 ГБ, камера 200 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
       "rating": 4,
+      "quantity": 1,
       "img": "https://imgproxy.onliner.by/J-I_JaxOCFhNxvSzK3-cDhPApqa6VesUkw2kOM7BgmA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvN2NiNTY1NzA1/NzlhZTczMjFjZjJh/YTdmMTIxNjlhOTMu/anBn"
     },
     {
       "id": 2,
       "brand": "Xiaomi",
       "name": "Gaming Monitor G27i",
-      "price": 400,
+      "price": 560,
       "category": "monitor",
+      "description": "27, 16:9, 1920x1080, IPS, 165 Гц, AMD FreeSync Premium, интерфейсы HDMI+DisplayPort",
       "rating": 5,
+      "quantity": 1,
       "img": "https://imgproxy.onliner.by/a7O1EDaEHAva_ZCyc8hqdoaF9fdOFk6XFHOGZm9y_rU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMjBkM2Q2MGUy/N2MwYWJlZWQzOGYy/OWZiYzZmYTkzN2Uu/anBn"
     },
     {
       "id": 3,
       "brand": "Lenovo",
       "name": "IdeaPad Slim 3",
-      "price": 400,
+      "price": 950,
       "category": "laptop",
+      "description": "15.6 1920 x 1080, IPS, 60 Гц, Intel Core i5 13420H, 16 ГБ LPDDR5, SSD 1024 ГБ, видеокарта встроенная, без ОС, цвет крышки серый, аккумулятор 47 Вт·ч",
       "rating": 5,
+      "quantity": 1,
       "img": "https://imgproxy.onliner.by/paAPlEXfNVZ2Bz7Bc137zVeOFXHxgFzRgUWBXngizWA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvZDMzN2Y2ODY3/MjdjMzM3ZjZhZWEz/ZDMyZmE5ZDQ4Njku/anBn"
     },
     {
       "id": 4,
       "brand": "apple",
       "name": "Iphone 16",
-      "price": 400,
+      "price": 760,
       "category": "phone",
+      "description": "смартфон, Apple iOS, экран 6.1 OLED (1179x2556) 60 Гц, Apple A18, ОЗУ 8 ГБ, память 128 ГБ, камера 48 Мп, аккумулятор 3561 мАч, 1 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
       "rating": 5,
+      "quantity": 1,
       "img": "https://imgproxy.onliner.by/J0yb5vVWNyvL2gXu4LKXh36lUpk8sGHBwuuaxazbOR8/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNjVhYTJkNGYx/ZDBjNjRiNjQ1OGQ2/ZGUyOWFmM2IwMDku/anBn"
     },
     {
       "id": 5,
       "brand": "samsung",
       "name": "samsung S24",
-      "price": 250,
+      "price": 530,
       "category": "phone",
+      "description": "смартфон, Android, экран 6.8 AMOLED (1440x3120) 120 Гц, Qualcomm Snapdragon 8 Gen 3, ОЗУ 12 ГБ, память 256 ГБ, камера 200 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
       "rating": 3,
+      "quantity": 1,
       "img": "https://imgproxy.onliner.by/cYOYwagP3kZNVWgI8oX1h2qcEgqBgVGQgajWbwFeIKs/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYjQ1NmJkN2Ex/ZGI3MTAxNDc5NWFl/MGMzOTQ3NjY4ZGYu/anBn"
     },
     {
       "id": 6,
       "brand": "Xiaomi",
       "name": "Redmi Note 14 Pro+",
-      "price": 300,
+      "price": 400,
       "category": "phone",
+      "description": "смартфон, Android, экран 6.67 AMOLED (1220x2712) 120 Гц, Qualcomm Snapdragon 7s Gen 3, ОЗУ 12 ГБ, память 512 ГБ, камера 200 Мп, аккумулятор 5110 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
       "rating": 3,
+      "quantity": 1,
       "img": "https://imgproxy.onliner.by/JRmowke09RylA11Wc2PLtHdjuflFBTm3Msv1CEV1pFU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNTkxMDMyYTEw/OTE2ZjdjYTY3NzY5/Y2U2YzhmM2FhYjMu/anBn"
     },
     {
       "id": 7,
       "brand": "Xiaomi",
       "name": "Xiaomi 15 Ultra",
-      "price": 400,
+      "price": 660,
       "category": "phone",
+      "description": "смартфон, Android, экран 6.73 AMOLED (1440x3200) 120 Гц, Qualcomm Snapdragon 8 Elite, ОЗУ 16 ГБ, память 512 ГБ, камера 50 Мп, аккумулятор 5410 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
       "rating": 5,
+      "quantity": 1,
       "img": "https://imgproxy.onliner.by/gqfmp5ZyAwrACWIjdeeDE5S3sPgUDNzNPDdrdf5KU2Q/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYzJhZDQ3YmIy/OTljZDhiOTIxZmMx/YWZmMjFjOGEwYTEu/anBn"
     },
     {
       "id": 8,
       "brand": "ASUS",
       "name": "Vivobook 16X",
-      "price": 400,
+      "price": 1470,
       "category": "laptop",
+      "description": "16.0 1920 x 1200, IPS, 60 Гц, AMD Ryzen 5 7430U, 16 ГБ DDR4, SSD 512 ГБ, видеокарта встроенная, без ОС, цвет крышки серебристый",
       "rating": 5,
+      "quantity": 1,
       "img": "https://imgproxy.onliner.by/a8Qm7NhRtEt0oO4QsyOIuOGeiMXriynrxV3noeDWDhA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmE2OGE2ODc5/Y2Y2MzAzMjA0MTYw/ODJmMjliNjE5ZTYu/anBn"
     },
     {
       "id": 9,
       "brand": "ASUS",
       "name": "TUF Gaming A15",
-      "price": 400,
+      "price": 1280,
       "category": "laptop",
+      "description": "15.6' 1920 x 1080, IPS, 144 Гц, AMD Ryzen 7 7435HS, 16 ГБ DDR5, SSD 512 ГБ, видеокарта NVIDIA GeForce RTX 3050 4 ГБ (TGP 75 Вт), без ОС, цвет крышки черный, аккумулятор 48 Вт·ч",
       "rating": 5,
+      "quantity": 1,
       "img": "https://imgproxy.onliner.by/TL0isupe2A1D7zjDgmbMzGAltab27faaj2w_fvTq_YA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmMwMzYyMTIx/M2VhNmQ1ZDNkNzYx/NTFlZTQ5YTQ1OTku/anBlZw"
     },
     {
       "id": 10,
       "brand": "apple",
       "name": "Macbook Air 13",
-      "price": 400,
+      "price": 2140,
       "category": "laptop",
+      "description": "13.6' 2560 x 1664, IPS, 60 Гц, Apple M4 (10 ядер), 16 ГБ, SSD 256 ГБ, видеокарта встроенная, Mac OS, цвет крышки голубой, аккумулятор 53.8 Вт·ч",
       "rating": 5,
+      "quantity": 1,
       "img": "https://imgproxy.onliner.by/vWmTOLSmgT_th1WW7SauBfMDX27FStMx3fWecwC8MjM/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvOWEwOGU1ZjU0/MDBlNTA4ZmI5NzVi/ZjY5NzY2OWMyYjUu/anBlZw"
     },
     {
       "id": 11,
       "brand": "Xiaomi",
       "name": "2K Monitor A27Qi",
-      "price": 400,
+      "price": 580,
       "category": "monitor",
+      "description": "2, 16:9, 2560x1440, IPS, 100 Гц, интерфейсы HDMI+DisplayPort",
       "rating": 5,
+      "quantity": 1,
       "img": "https://imgproxy.onliner.by/sWD7MBCXIqQfS3AOv0-5ADWwvZ4lHzUDsX9HpKxLlgk/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNDIyNGZmNWZk/ZWIwMDNhMDI3YTg1/ZDJhMTdmZTJkZWMu/anBn"
     },
     {
       "id": 12,
       "brand": "LG",
       "name": "UltraWide 34WP65C-B",
-      "price": 400,
+      "price": 890,
       "category": "monitor",
+      "description": "34', 21:9, 3440x1440, VA, изогнутый (1800R), 160 Гц, AMD FreeSync Premium, динамики, интерфейсы HDMI+DisplayPort, регулировка высоты",
       "rating": 5,
+      "quantity": 1,
       "img": "https://imgproxy.onliner.by/CP5L1dQIKPJfhFgIxcDm8N_PlA58GB7b-Q6Yha2_Bqo/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMzA5NTZmNzhk/ZDJmNjNiYjk0YTdh/ODRjODVmODRjZDgu/anBlZw"
+    },
+    {
+      "id": 13,
+      "brand": "Google",
+      "name": "Google Pixel 9",
+      "price": 880,
+      "category": "phone",
+      "description": "смартфон, Android, экран 6.24 OLED (1080x2424) 120 Гц, Google Tensor G4, ОЗУ 12 ГБ, память 128 ГБ, камера 50 Мп, аккумулятор 4700 мАч, 1 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
+      "rating": 5,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/d-OX16yCB_y3lZGd7nUs0Wn2r9Rnjj39Z4AfKlggFEA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYjk2OTM4Mzg1/MTdiOGYwNGNhZDAw/NzgzMWMxYWRjY2Qu/anBn"
+    },
+    {
+      "id": 14,
+      "brand": "POCO ",
+      "name": "POCO X7 Pro",
+      "price": 730,
+      "category": "phone",
+      "description": "смартфон, Android, экран 6.67 AMOLED (1220x2712) 120 Гц, Mediatek Dimensity 8400 Ultra, ОЗУ 12 ГБ, память 512 ГБ, камера 50 Мп, аккумулятор 6000 мАч, 2 SIM (nano-SIM), моноблок, влагозащита",
+      "rating": 5,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/-EMsRfq9PiisB5BjwpzwGLPe-972q_kO6UDuzQEhOQ0/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvODFkYTc3YzFl/NTMzZGRjNjk2YmNi/YzEyNDM5ZmVkMmIu/anBn"
+    },
+    {
+      "id": 15,
+      "brand": "Google ",
+      "name": "Google Pixel 8 Pro",
+      "price": 650,
+      "category": "phone",
+      "description": "смартфон, Android, экран 6.7 OLED (1344x2992) 120 Гц, Google Tensor G3, ОЗУ 12 ГБ, память 128 ГБ, камера 50 Мп, аккумулятор 5050 мАч, 1 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
+      "rating": 5,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/NdeJGsf_5zTkc4aXnv39aDBShTlLguidl0vBfHGP6pk/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYTYxMjc2NDgy/ZjhkYWNiNzNmMmM4/OWVlMmMxMjE5ODcu/anBn"
+    },
+    {
+      "id": 16,
+      "brand": "Apple ",
+      "name": "iPhone 16 Pro Max",
+      "price": 1200,
+      "category": "phone",
+      "description": "смартфон, Android, экран 6.7 OLED (1344x2992) 120 Гц, Google Tensor G3, ОЗУ 12 ГБ, память 128 ГБ, камера 50 Мп, аккумулятор 5050 мАч, 1 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
+      "rating": 5,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/uwThPxDFivMNBKhaloHa7cPFRF0Lfpg9XmPPn8wKxNE/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvOTEyODQyNzVk/OGFkZDNkMzA0ZjIw/OTE4N2E2MDg1ZWYu/anBn"
+    },
+    {
+      "id": 17,
+      "brand": "Lenovo  ",
+      "name": "Lenovo LOQ 15IAX9 83GS005NRK",
+      "price": 980,
+      "category": "laptop",
+      "description": "15.6 1920 x 1080, IPS, 144 Гц, Intel Core i5 12450HX, 16 ГБ DDR5, SSD 512 ГБ, видеокарта NVIDIA GeForce RTX 3050 6 ГБ (TGP 95 Вт), без ОС, цвет крышки темно-серый, аккумулятор 60 Вт·ч",
+      "rating": 5,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/RCkFgMHBn-fkh1nUOMPfusjcb4qER6ejw_zNpSL7hQk/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNzQ2OTQxNjMy/OTc0MDM3ZDFkYmU0/ZTZlM2JmNjEzOTQu/anBn"
+    },
+    {
+      "id": 18,
+      "brand": "Dell",
+      "name": "Vostro 15 3520 HDL5A9102X4",
+      "price": 870,
+      "category": "laptop",
+      "description": "15.6 1920 x 1080, IPS, 120 Гц, Intel Core i5 1235U, 16 ГБ DDR4, SSD 512 ГБ, видеокарта встроенная, Linux, цвет крышки черный, аккумулятор 41 Вт·ч",
+      "rating": 5,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/EpxodmLqWX70HsDPFEJ4lZphI8xuxqQ8yJOB9UUC_sY/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMjhlMTA3OWNm/MDNjOWViNjVmODA1/NzljYTM1YTc0NjQu/anBlZw"
+    },
+    {
+      "id": 19,
+      "brand": "Lenovo",
+      "name": "Legion 5 R7000 83LQ0005CD",
+      "price": 1200,
+      "category": "laptop",
+      "description": "15.6 1920 x 1080, IPS, 144 Гц, AMD Ryzen 7 8745H, 16 ГБ DDR5, SSD 512 ГБ, видеокарта NVIDIA GeForce RTX 4060 8 ГБ (TGP 125 Вт), Windows 11 Home, цвет крышки темно-серый, аккумулятор 60 Вт·ч",
+      "rating": 5,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/wy3buFWbrnSfSQNCvo6tfJV80JsxMaOVyMoLSRUEgGI/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNzYwODFjZWFm/NmNlZjA1ZWJlNDhi/NzA5MTQxM2FmZGQu/anBn"
+    },
+    {
+      "id": 20,
+      "brand": "Xiaomi ",
+      "name": "Xiaomi Redmi Gaming Monitor G24 P24FCA-RG",
+      "price": 790,
+      "category": "monitor",
+      "description": "23.8, 16:9, 1920x1080, IPS, 180 Гц, VESA Adaptive-Sync, интерфейсы HDMI+DisplayPort",
+      "rating": 5,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/NmaotjuZH21TsMaHwz-92JDqpjeNTpJz71wUJHkWzTc/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvOWNjZDcwMmI3/MmUxZDUzZGY0NWQw/ZGQ4YTlmZWJkNmYu/anBn"
+    },
+    {
+      "id": 21,
+      "brand": "Xiaomi ",
+      "name": "Redmi Surface Display G34WQ C34WQBA-RG",
+      "price": 580,
+      "category": "monitor",
+      "description": "34, 21:9, 3440x1440, VA, изогнутый (1500R), 180 Гц, AMD FreeSync Premium, интерфейсы HDMI+DisplayPort, регулировка высоты",
+      "rating": 5,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/x6PrCTiAeOwaqEQ4i0JtAoE6-CoIcopiAjSSr-AAbv8/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvMzU1ZTkzMmJj/MjhkNzRmY2QyODJh/NWZmN2FmMWZkYTEu/anBn"
+    },
+    {
+      "id": 22,
+      "brand": "ExeGate  ",
+      "name": "Combat EG2707A EX295595RUS",
+      "price": 250,
+      "category": "monitor",
+      "description": "27, 16:9, 2560x1440, IPS, 165 Гц, AMD FreeSync, динамики, интерфейсы HDMI+DisplayPort, регулировка высоты",
+      "rating": 5,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/D0iLIka5k8ga2DgaQ09s1REKGeR62sG2be6BolaMzTw/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmEyMzMwNzU3/MWU3OTk0MTQzOTM3/ZTJjZTc2NTY1OTgu/anBn"
     }
   ],
-  "favorites": [
+  "favorites": [],
+  "cart": [
     {
-      "id": 4,
-      "brand": "apple",
-      "name": "Iphone 16",
-      "price": 400,
+      "id": 5,
+      "brand": "samsung",
+      "name": "samsung S24",
+      "price": 530,
       "category": "phone",
-      "rating": 5,
-      "img": "https://imgproxy.onliner.by/J0yb5vVWNyvL2gXu4LKXh36lUpk8sGHBwuuaxazbOR8/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNjVhYTJkNGYx/ZDBjNjRiNjQ1OGQ2/ZGUyOWFmM2IwMDku/anBn"
-    },
-    {
-      "id": 6,
-      "brand": "Xiaomi",
-      "name": "Redmi Note 14 Pro+",
-      "price": 300,
-      "category": "phone",
+      "description": "смартфон, Android, экран 6.8 AMOLED (1440x3120) 120 Гц, Qualcomm Snapdragon 8 Gen 3, ОЗУ 12 ГБ, память 256 ГБ, камера 200 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
       "rating": 3,
-      "img": "https://imgproxy.onliner.by/JRmowke09RylA11Wc2PLtHdjuflFBTm3Msv1CEV1pFU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNTkxMDMyYTEw/OTE2ZjdjYTY3NzY5/Y2U2YzhmM2FhYjMu/anBn"
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/cYOYwagP3kZNVWgI8oX1h2qcEgqBgVGQgajWbwFeIKs/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYjQ1NmJkN2Ex/ZGI3MTAxNDc5NWFl/MGMzOTQ3NjY4ZGYu/anBn"
+    }
+  ],
+  "comments": [
+    {
+      "userName": "Алексей",
+      "text": "Использую Xiaomi Gaming Monitor G27i уже шестой месяц, и он полностью оправдал мои ожидания. Отличная цветопередача, плавный 165 Гц — играть на нем одно удовольствие! Матрица даёт чёткое изображение, без засветов, а дизайн минималистичный, но стильный. Эргономичная подставка позволяет легко регулировать положение экрана, а крепление VESA — дополнительный плюс для тех, кто хочет повесить монитор на стену.\n\nЕдинственный момент — встроенные динамики могли бы быть лучше, но для меня это не критично, ведь всегда использую наушники. В целом, за свою цену это отличный вариант как для игр, так и для работы! Рекомендую.",
+      "productID": 2,
+      "date": "4/18/2025",
+      "id": 1
     },
     {
-      "id": 8,
-      "brand": "ASUS",
-      "name": "Vivobook 16X",
-      "price": 400,
-      "category": "laptop",
-      "rating": 5,
-      "img": "https://imgproxy.onliner.by/a8Qm7NhRtEt0oO4QsyOIuOGeiMXriynrxV3noeDWDhA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmE2OGE2ODc5/Y2Y2MzAzMjA0MTYw/ODJmMjliNjE5ZTYu/anBn"
+      "userName": "Иван",
+      "text": "Когда выбирал новый монитор, долго сомневался, но решил рискнуть с Xiaomi Gaming Monitor G27i — и ни разу не пожалел! Первое, что сразу впечатляет, — это скорость и плавность. 165 Гц реально меняют ощущение от игр: больше никакого размытия или задержек, всё сверхчётко и гладко.\n\nНо не только игры радуют: работать на этом мониторе тоже удобно. Экран приятный для глаз, цвета естественные, углы обзора широкие — можно спокойно редактировать фото или смотреть фильмы без искажений.\n\nДизайн минималистичный, сборка добротная, материалы качественные. Встроенного звука нет, но меня это не беспокоит — всё равно предпочитаю хорошие наушники.\n\nЕсли вам нужен быстрый, качественный монитор без переплат — берите смело",
+      "productID": 2,
+      "date": "4/18/2025",
+      "id": 2
+    },
+    {
+      "userName": "Глеб",
+      "text": "Xiaomi Gaming Monitor G27i – достойный выбор для работы и игр. Четкое изображение, высокая частота обновления и удобная настройка положения экрана. Надежный, стильный и доступный по цене. Рекомендую!",
+      "productID": 2,
+      "date": "4/18/2025",
+      "id": 3
+    },
+    {
+      "userName": "Ольга",
+      "text": "Пользуюсь Samsung Galaxy S25 уже несколько месяцев, и он полностью оправдал ожидания. Экран 6,2\" Dynamic AMOLED 2X с 120 Гц радует плавностью и насыщенными цветами, а высокая яркость позволяет комфортно использовать телефон даже на улице в солнечный день.\n\nПроизводительность отличная: все приложения и игры работают быстро, без зависаний. Камера делает качественные снимки, особенно при хорошем освещении. Батарея держит заряд весь день, даже при активном использовании.\n\nЕдинственный нюанс — автояркость могла бы работать точнее, но это мелочь по сравнению с общими впечатлениями. В целом, смартфон идеально подходит как для работы, так и для развлечений. Рекомендую!",
+      "productID": 1,
+      "date": "4/18/2025",
+      "id": 4
+    },
+    {
+      "userName": "Елена",
+      "text": "Отличный телефон! Яркий экран, плавная картинка, быстрая работа. Камера хорошая, батареи хватает на день. Автояркость могла бы быть точнее, но в целом очень доволен. Рекомендую!",
+      "productID": 1,
+      "date": "4/18/2025",
+      "id": 5
+    },
+    {
+      "userName": "Егор",
+      "text": "Отличный смартфон! Яркий экран, быстрая работа, хорошая камера. Батарея держит заряд целый день. ",
+      "productID": 1,
+      "date": "4/18/2025",
+      "id": 6
+    },
+    {
+      "userName": "Алексей",
+      "text": "Пользуюсь Lenovo IdeaPad Slim 3 уже некоторое время, и могу сказать, что это хороший бюджетный ноутбук для повседневных задач. Легкий, компактный, удобный в использовании. Производительность достаточная для работы с документами, просмотра видео и веб-серфинга.\n\nЭкран 15,6\" с разрешением 1920x1080 неплохой, но яркость могла бы быть выше. Батарея держит заряд долго, что приятно удивило. Клавиатура удобная, но тачпад немного жестковат.\n\nВ целом, если нужен недорогой ноутбук для учебы или работы, IdeaPad Slim 3 — достойный вариант.",
+      "productID": 3,
+      "date": "4/18/2025",
+      "id": 7
+    },
+    {
+      "userName": "Влад",
+      "text": "Хороший бюджетный ноутбук для работы и учебы. Легкий, удобный, производительность достаточная для повседневных задач. Экран средний по яркости, батарея держит долго. В целом, достойный вариант за свою цену",
+      "productID": 3,
+      "date": "4/18/2025",
+      "id": 8
+    },
+    {
+      "userName": "Анна",
+      "text": "Легкий, удобный и надежный ноутбук для работы и учебы. Производительности хватает для повседневных задач, батарея держит заряд долго. Экран хороший, но яркость могла бы быть выше. Хороший выбор за свою цену!",
+      "productID": 3,
+      "date": "4/18/2025",
+      "id": 9
+    },
+    {
+      "userName": "Инна",
+      "text": "iPhone 16 — мощный и стильный смартфон с отличной производительностью. Чип A18 обеспечивает быструю работу, а камера с улучшенным управлением делает съемку удобнее. Дизайн стал еще более элегантным, а новые цвета радуют глаз.\n\nЭкран яркий, но частота обновления все еще 60 Гц, что немного устарело для флагмана. В остальном — отличный выбор для тех, кто хочет надежный и современный iPhone без переплаты",
+      "productID": 4,
+      "date": "4/18/2025",
+      "id": 10
+    },
+    {
+      "userName": "Олег",
+      "text": "Современный, мощный и стильный смартфон. Быстрая работа, качественная камера, яркий экран — все, что нужно для комфортного использования. Единственное, что могло бы быть лучше — частота обновления 60 Гц, но в остальном устройство на высоте. Отличный выбор для тех, кто хочет надежный iPhone!",
+      "productID": 4,
+      "date": "4/18/2025",
+      "id": 11
+    },
+    {
+      "userName": "АндроидФилл",
+      "text": "Ожидал большего от нового iPhone 16, но в реальности устройство не так впечатляет. Производительность хорошая, но особого прорыва по сравнению с прошлой моделью нет. Камера нормальная, но без значительных улучшений.\n\nЭкран яркий, но все еще 60 Гц для базовой версии — странное решение для флагмана. Автономность средняя, приходится часто заряжать. В целом, если у вас прошлый iPhone, особого смысла в обновлении не вижу",
+      "productID": 4,
+      "date": "4/18/2025",
+      "id": 12
+    },
+    {
+      "userName": "игорь",
+      "text": "Samsung Galaxy S24 — компактный и мощный смартфон. Быстрый процессор, яркий экран, качественная камера — все на высшем уровне. Особенно радует семилетняя поддержка обновлений, что делает устройство долгосрочным вложением.\n\nМинусы? Ограниченные объемы памяти в базовой версии и возможный нагрев при интенсивных нагрузках. Но в целом, отличный выбор для тех, кто хочет современный и надежный смартфон.",
+      "productID": 5,
+      "date": "4/18/2025",
+      "id": 13
+    },
+    {
+      "userName": "Георгий",
+      "text": "Samsung Galaxy S24 не оправдал ожиданий. Несмотря на мощный процессор, существенных улучшений по сравнению с предыдущей моделью практически нет. Камера осталась на том же уровне, без значительных нововведений, а программные функции, связанные с ИИ, пока выглядят больше как маркетинговый ход, чем реальное преимущество.\n\nОдним из главных недостатков стало использование Exynos 2400 в некоторых регионах вместо Snapdragon 8 Gen 3. Это привело к разнице в производительности, где версии с Exynos показывают худшие результаты в тестах, быстрее нагреваются и потребляют больше энергии.\n\nЭкран яркий, но частота обновления 60 Гц в базовой версии кажется устаревшей для флагмана. Автономность средняя, телефон приходится заряжать чаще, чем хотелось бы.\n\nВ целом, если у вас уже есть Galaxy S23, обновляться смысла мало. Улучшения минимальны, а некоторые решения Samsung вызывают вопросы. Если ищете действительно значимый апгрейд, лучше обратить внимание на другие модели.",
+      "productID": 5,
+      "date": "4/18/2025",
+      "id": 14
     }
   ]
 }

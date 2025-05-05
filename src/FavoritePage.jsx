@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ProductsCard } from "./Components/productsCard";
+import { ProductsCard } from "../src/Components/productCard";
 
 export const FavoritePage = ({ favoriteProducts }) => {
   return (

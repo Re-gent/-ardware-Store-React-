@@ -1,0 +1,10 @@
+.category {
+  div {
+    padding: 20px;
+  }
+    div:hover,
+    .active {
+      background-color: rgb(78, 78, 204);
+    }
+}
+

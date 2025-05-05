@@ -1,0 +1,19 @@
+.productPageBlock{
+	display: flex;
+	box-shadow: 3px 3px 3px 3px gray;
+  margin: 20px;
+  padding: 10px;
+}
+.productInfo{
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.productPageIcons{
+	display: flex;
+
+	div{
+		margin-right: 50px;
+	}
+}

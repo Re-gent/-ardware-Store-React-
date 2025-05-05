@@ -1,0 +1,16 @@
+.sort{
+	margin-top: 30px;
+	margin-left: 40px;
+	margin-bottom: 10px;
+	span:first-child {
+		cursor:default;
+	}
+
+	span {
+		margin-right: 20px;
+		cursor: pointer;
+	}
+}
+.sortActive{
+color: rgb(55, 55, 255);
+}

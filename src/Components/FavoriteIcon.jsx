@@ -2,8 +2,8 @@ export const FavoriteIcon = ({ active }) => {
   return (
     <svg
       fill={active ? "#e00000" : "#fff"}
-      height="30px"
-      width="30px"
+      height="35px"
+      width="35px"
       version="1.1"
       id="Filled_Icons"
       xmlns="http://www.w3.org/2000/svg"
