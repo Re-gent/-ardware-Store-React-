@@ -1,7 +1,8 @@
-// @ts-nocheck
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { ProductType } from "../../../types";
 // REDUX слайсер. Здесь собраны все запросы с сервера для избранных товаров
-export const loadProduct = createAsyncThunk(
+
+export const loadProduct = createAsyncThunk<ProductType, string>(
   "products/loadProduct",
   async (id, thunkAPI) => {
     const response = await fetch(`http://localhost:5000/products/${id}`);
@@ -11,16 +12,40 @@ export const loadProduct = createAsyncThunk(
   }
 );
 
-export const loadComments = createAsyncThunk(
+/* type CommentType = {
+  userName: string;
+  text: string;
+  productID: number;
+  date: string;
+  // id?: number - необязателный параметр (опциональное поле)
+  id?: number;
+}; */
+/* export const loadComments = createAsyncThunk<CommentType[], number>(
   "products/loadComment",
-  async (id,thunkAPI) => {
-    const result = await fetch(`http://localhost:5000/comments?productID=${id}`);
+  async (id, thunkAPI) => {
+    const result = await fetch(
+      `http://localhost:5000/comments?productID=${id}`
+    );
     const data = await result.json();
-    return data
+    return data;
+  }
+); */
+
+export const createProduct = createAsyncThunk<void,ProductType>(
+  "products/createProduct",
+  async (product, { dispatch }) => {
+    await fetch(`http://localhost:5000/products`, {
+      method: "POST",
+      body: JSON.stringify(product),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
   }
 );
 
-export const createComment = createAsyncThunk(
+/* export const createComment = createAsyncThunk<void,CommentType>(
   "products/createComment",
   async (comment, { dispatch }) => {
     await fetch(`http://localhost:5000/comments`, {
@@ -33,11 +58,16 @@ export const createComment = createAsyncThunk(
 
     dispatch(loadComments(comment.productID));
   }
-);
+); */
 
-const initialState = {
+type InitialStateType ={
+  product: ProductType | null
+  //comments: CommentType[]
+}
+
+const initialState:InitialStateType = {
   product: null,
-  comments: [],
+  //comments: [],
 };
 
 export const productSlice = createSlice({
@@ -57,12 +87,10 @@ export const productSlice = createSlice({
       console.log("запрос упал с ошибкой");
     });
 
-    builder.addCase(loadComments.fulfilled, (state, action) => {
+    /* builder.addCase(loadComments.fulfilled, (state, action) => {
       state.comments = action.payload;
-    });
+    }); */
   },
-
-
 });
 
 export default productSlice.reducer;

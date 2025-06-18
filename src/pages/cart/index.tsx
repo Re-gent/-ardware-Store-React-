@@ -1,41 +1,38 @@
-// @ts-nocheck
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import { LinkBack } from "../../Components/LinkBack";
-import { useSelector } from "react-redux";
+import { useAppDispatch, useAppSelector } from "../../reduxHooks";
 import { CartItem } from "./CartItem";
 import "./index.scss";
+import { loadCart } from "./slices";
 
 export const CartPage = () => {
-  const { cart } = useSelector((state) => state.cart);
+  const dispatch = useAppDispatch();
+  useEffect(() => {
+    dispatch(loadCart());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  const { cart } = useAppSelector((state) => state.cart);
 
   // подсчет итоговой цены на странице карзины товаров
   const totalPrice = cart.reduce(
-      // acc -- аккумулятор, который хранит в себе мат. действия, совершенные над параметрами товаров в корзине товаров 
+    // acc -- аккумулятор, который хранит в себе мат. действия, совершенные над параметрами товаров в корзине товаров
     (acc, product) => acc + product.quantity * product.price,
     0
   );
-  const productCount = cart.reduce(
-    (acc, product) => acc + product.quantity,
-    0
-  );;
+  const productCount = cart.reduce((acc, product) => acc + product.quantity, 0);
 
   return (
     <div>
       <div className="">
         {cart.length ? (
-          cart.map((el) => (
-            <CartItem
-              key={el.id}
-              product={el}
-            />
-          ))
+          cart.map((el) => <CartItem key={el.id} product={el} />)
         ) : (
           <h3>Товаров нет в корзине</h3>
         )}
       </div>
       <div className="totalPriceBlock">
         <div className="totalPriceRow">
-          <div>Количество шт:</div>&nbsp;&nbsp;  {/* отступ в обход CSS */}
+          <div>Количество шт:</div>&nbsp;&nbsp; {/* отступ в обход CSS */}
           <b>{productCount}</b>
         </div>
         <div className="totalPriceRow">

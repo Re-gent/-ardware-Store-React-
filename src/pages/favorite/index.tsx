@@ -1,12 +1,17 @@
-// @ts-nocheck
-import { Link } from "react-router-dom";
 import { ProductsCard } from "../../Components/productCard";
-import { useSelector } from "react-redux";
+import { useAppDispatch, useAppSelector } from "../../reduxHooks";
 import { LinkBack } from "../../Components/LinkBack";
+import { useEffect } from "react";
+import { fetchFavorites } from "./FavoritesSlice";
 
 export const FavoritePage = () => {
-  const favorites = useSelector((state) => state.favorites.favorites);
+  const dispatch = useAppDispatch();
+  const favorites = useAppSelector((state) => state.favorites.favorites);
+  useEffect(() => {
+    dispatch(fetchFavorites());
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   console.log(favorites);
   return (
     <div>

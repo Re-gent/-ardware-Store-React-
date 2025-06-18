@@ -1,23 +1,27 @@
 import { useParams } from "react-router-dom";
 import { loadProduct } from "./slices";
-import { useDispatch, useSelector } from "react-redux";
+import { useAppDispatch, useAppSelector } from "../../reduxHooks";
 import { useEffect } from "react";
 import "./index.scss";
 import { ToCartButton } from "../../Components/toCartButton";
 import { ToFavoriteButton } from "../../Components/toFavoriteButton";
 import { ProductComments } from "./comments";
+import { useGetProductQuery } from "../../querys/brandsApi";
 
 export const Product = () => {
   const { id } = useParams();
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
-  // @ts-ignore
-  const { product } = useSelector((state) => state.product);
-
-  useEffect(() => {
-    // @ts-ignore
-    dispatch(loadProduct(id));
-  }, []);
+  //const { product } = useAppSelector((state) => state.product);
+  
+  
+  // в данном случае скипается (skip) запрос на продукт с id с которым он уже делался. То есть id запоминается (кешируется) и повторные запросы на бэк не делаюся 
+  const { data: product } = useGetProductQuery(id!, { skip: !id });
+  /* useEffect(() => {
+    if (id) {
+      dispatch(loadProduct(id));
+    }
+  }, []); */
 
   if (!product) {
     return <div>Loading...</div>;
@@ -45,7 +49,7 @@ export const Product = () => {
         </div>
       </div>
 
-      <ProductComments productID={product.id}/>
+      <ProductComments productID={product.id} />
     </>
   );
 };

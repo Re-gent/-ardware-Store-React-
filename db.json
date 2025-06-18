@@ -241,10 +241,77 @@
       "rating": 5,
       "quantity": 1,
       "img": "https://imgproxy.onliner.by/D0iLIka5k8ga2DgaQ09s1REKGeR62sG2be6BolaMzTw/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYmEyMzMwNzU3/MWU3OTk0MTQzOTM3/ZTJjZTc2NTY1OTgu/anBn"
+    },
+    {
+      "brand": "sumsung",
+      "name": "sumsung s24",
+      "description": "wetewtweastg",
+      "price": "1214",
+      "category": "phone",
+      "img": "https://img.5element.by/import/images/ut/goods/good_0cd9984e-8233-11ef-8db4-005056012b6d/-1_600.jpg",
+      "rating": 1,
+      "quantity": 1,
+      "id": 23
     }
   ],
-  "favorites": [],
+  "favorites": [
+    {
+      "id": 6,
+      "brand": "Xiaomi",
+      "name": "Redmi Note 14 Pro+",
+      "price": 400,
+      "category": "phone",
+      "description": "смартфон, Android, экран 6.67 AMOLED (1220x2712) 120 Гц, Qualcomm Snapdragon 7s Gen 3, ОЗУ 12 ГБ, память 512 ГБ, камера 200 Мп, аккумулятор 5110 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
+      "rating": 3,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/JRmowke09RylA11Wc2PLtHdjuflFBTm3Msv1CEV1pFU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNTkxMDMyYTEw/OTE2ZjdjYTY3NzY5/Y2U2YzhmM2FhYjMu/anBn"
+    },
+    {
+      "id": 5,
+      "brand": "samsung",
+      "name": "samsung S24",
+      "price": 530,
+      "category": "phone",
+      "description": "смартфон, Android, экран 6.8 AMOLED (1440x3120) 120 Гц, Qualcomm Snapdragon 8 Gen 3, ОЗУ 12 ГБ, память 256 ГБ, камера 200 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
+      "rating": 3,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/cYOYwagP3kZNVWgI8oX1h2qcEgqBgVGQgajWbwFeIKs/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvYjQ1NmJkN2Ex/ZGI3MTAxNDc5NWFl/MGMzOTQ3NjY4ZGYu/anBn"
+    },
+    {
+      "id": 4,
+      "brand": "apple",
+      "name": "Iphone 16",
+      "price": 760,
+      "category": "phone",
+      "description": "смартфон, Apple iOS, экран 6.1 OLED (1179x2556) 60 Гц, Apple A18, ОЗУ 8 ГБ, память 128 ГБ, камера 48 Мп, аккумулятор 3561 мАч, 1 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
+      "rating": 5,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/J0yb5vVWNyvL2gXu4LKXh36lUpk8sGHBwuuaxazbOR8/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNjVhYTJkNGYx/ZDBjNjRiNjQ1OGQ2/ZGUyOWFmM2IwMDku/anBn"
+    },
+    {
+      "id": 1,
+      "brand": "samsung",
+      "name": "samsung S25",
+      "price": 680,
+      "category": "phone",
+      "description": "смартфон, Android, экран 6.9 AMOLED (1440x3120) 120 Гц, Qualcomm Snapdragon 8 Elite, ОЗУ 12 ГБ, память 256 ГБ, камера 200 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
+      "rating": 4,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/J-I_JaxOCFhNxvSzK3-cDhPApqa6VesUkw2kOM7BgmA/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvN2NiNTY1NzA1/NzlhZTczMjFjZjJh/YTdmMTIxNjlhOTMu/anBn"
+    }
+  ],
   "cart": [
+    {
+      "id": 6,
+      "brand": "Xiaomi",
+      "name": "Redmi Note 14 Pro+",
+      "price": 400,
+      "category": "phone",
+      "description": "смартфон, Android, экран 6.67 AMOLED (1220x2712) 120 Гц, Qualcomm Snapdragon 7s Gen 3, ОЗУ 12 ГБ, память 512 ГБ, камера 200 Мп, аккумулятор 5110 мАч, 2 SIM (nano-SIM/eSIM), моноблок, влагозащита IP68",
+      "rating": 3,
+      "quantity": 1,
+      "img": "https://imgproxy.onliner.by/JRmowke09RylA11Wc2PLtHdjuflFBTm3Msv1CEV1pFU/w:170/h:250/z:2/f:jpg/aHR0cHM6Ly9jb250/ZW50Lm9ubGluZXIu/YnkvY2F0YWxvZy9k/ZXZpY2Uvb3JpZ2lu/YWwvNTkxMDMyYTEw/OTE2ZjdjYTY3NzY5/Y2U2YzhmM2FhYjMu/anBn"
+    },
     {
       "id": 5,
       "brand": "samsung",
@@ -356,5 +423,29 @@
       "date": "4/18/2025",
       "id": 14
     }
-  ]
+  ],
+  "users": [
+    {
+      "login": "Anton",
+      "password": "Adf12!wqserf",
+      "name": "Антон",
+      "phone": "21353215",
+      "id": 1
+    },
+    {
+      "login": "Parsi",
+      "password": "Adf12!wqserf",
+      "name": "Антон",
+      "phone": "222222",
+      "id": 2
+    },
+    {
+      "login": "Ivan",
+      "password": "Adf12!wqserf",
+      "name": "Иван",
+      "phone": "2352",
+      "id": 3
+    }
+  ],
+  "brands": ["xiaomi", "samsung", "apple", "asus", "HP"]
 }

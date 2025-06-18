@@ -1,7 +1,13 @@
 // @ts-nocheck
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { ProductType } from "../../types";
 // REDUX слайсер. Здесь собраны все запросы с сервера для  товаров на главной странице
-export const fetchProducts = createAsyncThunk(
+
+
+
+export const fetchProducts = createAsyncThunk<ProductType[], 
+string //указываем тип для params
+>(
   "products/fetchProducts",
   async (params, thunkAPI) => {
     /* запрос к серверу _like -- нестрогое равенство
@@ -22,7 +28,12 @@ export const fetchProducts = createAsyncThunk(
   }
 );
 
-const initialState = {
+type InitialStateType = {
+  loading: boolean;
+  products: ProductType[];
+};
+
+const initialState: InitialStateType = {
   loading: false,
   products: [],
 };

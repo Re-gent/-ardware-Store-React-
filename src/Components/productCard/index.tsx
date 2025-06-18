@@ -3,9 +3,14 @@ import { ToFavoriteButton } from "../toFavoriteButton";
 import { ToCartButton } from "../toCartButton";
 import "./index.scss";
 import { memo } from "react";
+import { ProductType } from "../../types";
 
-// @ts-ignore
-export const ProductsCard = memo(({ product }) => {
+//типизация
+type Props = {
+  product: ProductType;
+};
+
+export const ProductsCard = memo(({ product }: Props) => {
   /* диструкторизация */
   const { img, name, brand, rating, price, id } = product;
 

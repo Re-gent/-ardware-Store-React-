@@ -1,24 +1,24 @@
-import { HeartFilled, HeartOutlined, ShoppingOutlined } from "@ant-design/icons";
-import { useDispatch, useSelector } from "react-redux";
+import { HeartFilled, HeartOutlined } from "@ant-design/icons";
+import { useAppDispatch, useAppSelector } from "../../reduxHooks";
 import {
   addToFavorites,
   deleteFavorites,
 } from "../../pages/favorite/FavoritesSlice";
-import { FavoriteIcon } from "../FavoriteIcon";
+import { ProductType } from "../../types";
 
-export const ToFavoriteButton = ({ product }) => {
-  // @ts-ignore
-  const { favorites } = useSelector((state) => state.favorites);
 
-  const dispatch = useDispatch();
+export const ToFavoriteButton = ({ product }:{product:ProductType}) => {
+  const { favorites } = useAppSelector((state) => state.favorites);
+
+  const dispatch = useAppDispatch();
 
   const onClickFavorites = () => {
     /* возвращает true, усли хотя бы на одном из элементов выполняется условие */
     if (favorites.some((el) => el.id === product.id)) {
-      // @ts-ignore
+
       dispatch(deleteFavorites(product.id));
     } else {
-      // @ts-ignore
+ 
       dispatch(addToFavorites(product));
     }
   };

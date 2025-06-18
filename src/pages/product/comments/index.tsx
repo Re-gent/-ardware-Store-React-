@@ -2,26 +2,36 @@ import "./index.scss";
 import { Button, Form, Input } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import { useEffect } from "react";
-import { createComment, loadComments } from "../slices";
-import { useDispatch, useSelector } from "react-redux";
+//import { createComment, loadComments } from "../slices";
+import { useAppDispatch, useAppSelector } from "../../../reduxHooks";
+import { useAddCommentMutation, useGetCommentsQuery } from "../../../querys/commentsApi";
 
-export const ProductComments = ({ productID }) => {
-  const dispatch = useDispatch();
-  // @ts-ignore
-  const { comments } = useSelector((state) => state.product);
+type CommentForm ={
+  userName: string
+  text:string
+}
+
+export const ProductComments = ({ productID }:{productID:number}) => {
+  const dispatch = useAppDispatch();
+
+  //const { comments } = useAppSelector((state) => state.product);
 	const [form] = Form.useForm()
 
-  const handleFinish = (values) => {
+  const {data:comments} = useGetCommentsQuery(productID)
+  const [addComment] = useAddCommentMutation()
+
+  const handleFinish = (values:CommentForm) => {
     const date = new Date().toLocaleDateString();
-    // @ts-ignore
-    dispatch(createComment({ ...values, productID, date }));
+
+    //dispatch(createComment({ ...values, productID, date }));
+    addComment({ ...values, productID, date })
 		/* очистка инпутов */
 		form.resetFields()
   };
-  useEffect(() => {
-    // @ts-ignore
+ /*  useEffect(() => {
+
     dispatch(loadComments(productID));
-  }, [productID]);
+  }, [productID]); */
 
   return (
     <div className="productPageComments">
@@ -40,7 +50,7 @@ export const ProductComments = ({ productID }) => {
         </Button>
       </Form>
       <div>
-        {comments.map((comment) => (
+        {comments?.map((comment) => (
           <div key={comment.id} className="productCommentsBlock">
 						<span>{comment.userName}</span>
 						<span>{comment.date}</span>

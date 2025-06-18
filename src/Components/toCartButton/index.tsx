@@ -1,20 +1,20 @@
 import { ShoppingOutlined } from "@ant-design/icons";
-import { useDispatch, useSelector } from "react-redux";
+import { useAppDispatch, useAppSelector } from "../../reduxHooks";
 import { addToCart, deleteCart } from "../../pages/cart/slices";
+import { ProductType } from "../../types";
 
-export const ToCartButton = ({ product }) => {
-  // @ts-ignore
-  const cart = useSelector((state) => state.cart.cart);
+export const ToCartButton = ({ product }:{product:ProductType}) => {
+  const cart = useAppSelector((state) => state.cart.cart);
 
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const onClickCart = () => {
     /* возвращает true, усли хотя бы на одном из элементов выполняется условие */
     if (cart.some((el) => el.id === product.id)) {
-      // @ts-ignore
+
       dispatch(deleteCart(product.id));
     } else {
-      // @ts-ignore
+
       dispatch(addToCart(product));
     }
   };
