@@ -15,9 +15,12 @@ type CommentType = {
 export const commentsApi = createApi({
   reducerPath: 'commentsApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000/' }),
+  tagTypes:['Comment'],
   endpoints: (builder) => ({
     getComments: builder.query<CommentType[], number>({
       query: (id) => `/comments?productID=${id}`,
+      //"крючек" для запроса. Чтобы изменения сразу же отображались на странице
+      providesTags: ()=>[{type: "Comment", id: "LIST"}]
     }),
     addComment: builder.mutation<void, CommentType>({
       query: (comment) => ({
@@ -25,7 +28,8 @@ export const commentsApi = createApi({
         method: 'POST',
         body: comment,
       }),
-      //invalidatesTags: [{ type: 'Post', id: 'LIST' }],
+      // ищет нужный "кречек", чтобы отобразить на странице новые данные
+      invalidatesTags: [{ type: 'Comment', id: 'LIST' }],
     }),
   }),
 })
